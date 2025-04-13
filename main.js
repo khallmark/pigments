@@ -1,5 +1,6 @@
 // List of essential header fields to show in the main table
 const essentialHeaders = [
+  'color_swatch',
   'common_name',
   'type',
   'in_use',
@@ -145,8 +146,17 @@ const tableManager = {
   },
   
   createHeader(header, index) {
-    const text = header.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
-    const attributes = { 'data-col-index': index, 'data-field': header };
+    const attributes = { 'data-col-index': index, 'data-field': header, 'class': 'column-' + header };
+    
+    // For color swatch column, we don't want to display a header text
+    let text = '';
+    if (header !== 'color_swatch') {
+      text = header.replace(/_/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
+    } else {
+      attributes['aria-label'] = 'Color Swatch';
+      attributes['title'] = 'Sort by color';
+    }
+    
     const th = utils.createElement('th', attributes, text);
     
     const sortIndicator = utils.createElement('span', { 
@@ -168,6 +178,7 @@ const tableManager = {
     
     // Get header to update sort indicators
     const header = document.querySelector(`th[data-col-index="${colIndex}"]`);
+    const headerField = header.getAttribute('data-field');
     
     // Reset all headers
     document.querySelectorAll('th').forEach(th => {
@@ -176,6 +187,18 @@ const tableManager = {
     });
     
     rows.sort(function (a, b) {
+      // Special handling for color swatch column (sort by hex_code)
+      if (headerField === 'color_swatch') {
+        const aIndex = parseInt(a.getAttribute('data-index'));
+        const bIndex = parseInt(b.getAttribute('data-index'));
+        const aHex = pigmentsData[aIndex].hex_code || '#FFFFFF';
+        const bHex = pigmentsData[bIndex].hex_code || '#FFFFFF';
+        
+        // Simple alphabetical comparison by hex code
+        return (aHex < bHex ? -1 : aHex > bHex ? 1 : 0) * sortDir[colIndex];
+      }
+      
+      // Regular sorting for other columns
       const aText = a.cells[colIndex].innerText.toLowerCase();
       const bText = b.cells[colIndex].innerText.toLowerCase();
       
@@ -217,26 +240,49 @@ const tableManager = {
     
     return tr;
   },
-  processCellValue(cellValue) {
-
-    if (cellValue === true) {
-      cellValue = 'Yes';
-    }
-
-    if (cellValue === false) {
-      cellValue = 'No';
-    }
-    
-    if (cellValue.indexOf('(') > -1) {
-      cellValue = cellValue.substring(0, cellValue.indexOf('(')).trim();
-    }
-
-    return cellValue;
-  },
   
   createDataCell(item, header) {
     const td = utils.createElement('td');
     const contentDiv = utils.createElement('div', { class: 'cell-content' });
+    
+    // Special handling for the color swatch column
+    if (header === 'color_swatch') {
+      const colorCode = item['hex_code'] ?? '';
+      
+      if (colorCode) {
+        const swatch = utils.createElement('span', { 
+          class: 'swatch', 
+          style: `background-color: ${colorCode}`,
+          title: `Color: ${colorCode}`
+        });
+        
+        // Create tooltip that shows both the swatch and hex code
+        const tooltip = utils.createElement('span', {
+          class: 'color-tooltip'
+        });
+        
+        // Create large swatch preview
+        const swatchLarge = utils.createElement('span', {
+          class: 'swatch-large', 
+          style: `background-color: ${colorCode}`
+        });
+        
+        // Add hex code text
+        const hexText = utils.createElement('span', {
+          class: 'hex-code-text'
+        }, colorCode);
+        
+        tooltip.appendChild(swatchLarge);
+        tooltip.appendChild(hexText);
+        swatch.appendChild(tooltip);
+        contentDiv.appendChild(swatch);
+      }
+      
+      td.appendChild(contentDiv);
+      return td;
+    }
+    
+    // Regular cell handling for other columns
     let cellValue = item[header] ?? '';
 
     if (typeof cellValue === 'string' && cellValue.indexOf(',') > -1) {
@@ -252,31 +298,27 @@ const tableManager = {
       cellValue = this.processCellValue(cellValue);
     }
         
-    if (header === 'common_name') {
-      contentDiv.innerHTML = utils.processText(cellValue);
-
-      const colorCode = item['hex_code'] ?? undefined;
-
-      if (colorCode) {
-        const swatch = utils.createElement('span', { 
-          class: 'swatch', 
-          style: `background-color: ${colorCode}` 
-        });
-      
-        const swatchLarge = utils.createElement('span', {
-          class: 'swatch-large', 
-          style: `background-color: ${colorCode}` 
-        });
-        
-        contentDiv.prepend(swatch)
-      }
-      
-    } else {
-      contentDiv.innerHTML = utils.processText(cellValue);
-    }
-
+    // Remove the swatch from the common_name column since it's now in its own column
+    contentDiv.innerHTML = utils.processText(cellValue);
+    
     td.appendChild(contentDiv);
     return td;
+  },
+  
+  processCellValue(cellValue) {
+    if (cellValue === true) {
+      cellValue = 'Yes';
+    }
+
+    if (cellValue === false) {
+      cellValue = 'No';
+    }
+    
+    if (cellValue.indexOf && cellValue.indexOf('(') > -1) {
+      cellValue = cellValue.substring(0, cellValue.indexOf('(')).trim();
+    }
+
+    return cellValue;
   },
 
   populateTable(data) {
@@ -389,16 +431,11 @@ const dataManager = {
     ];
     
     stats.forEach(stat => {
-      const statItem = document.createElement('div');
-      statItem.className = 'stat-item';
+      const statItem = utils.createElement('div', { class: 'stat-item' });
       
-      const statValue = document.createElement('div');
-      statValue.className = 'stat-value';
-      statValue.textContent = stat.value;
+      const statValue = utils.createElement('div', { class: 'stat-value' }, stat.value.toString());
       
-      const statLabel = document.createElement('div');
-      statLabel.className = 'stat-label';
-      statLabel.textContent = stat.label;
+      const statLabel = utils.createElement('div', { class: 'stat-label' }, stat.label);
       
       statItem.appendChild(statValue);
       statItem.appendChild(statLabel);
@@ -434,26 +471,26 @@ const dataManager = {
       if (uniqueValues.size <= 1) return; // Skip if not enough values
       
       // Create filter group
-      const filterGroup = document.createElement('div');
-      filterGroup.className = 'filter-group';
+      const filterGroup = utils.createElement('div', { class: 'filter-group' });
       
       // Create select element
-      const select = document.createElement('select');
-      select.className = 'filter-select';
-      select.dataset.field = field;
+      const select = utils.createElement('select', {
+        class: 'filter-select',
+        'data-field': field
+      });
       select.onchange = filterManager.applyFilters;
       
       // Add default option
-      const defaultOption = document.createElement('option');
-      defaultOption.value = '';
-      defaultOption.textContent = `Filter by ${field === 'in_use' ? 'usage status' : field.replace('_', ' ')}`;
+      const defaultOption = utils.createElement('option', {
+        value: ''
+      }, `Filter by ${field === 'in_use' ? 'usage status' : field.replace('_', ' ')}`);
       select.appendChild(defaultOption);
       
       // Add options for each unique value
       Array.from(uniqueValues).sort().forEach(value => {
-        const option = document.createElement('option');
-        option.value = value;
-        option.textContent = value;
+        const option = utils.createElement('option', {
+          value: value
+        }, value);
         select.appendChild(option);
       });
       
@@ -576,11 +613,9 @@ const modalManager = {
       
       if (!hasContent) return; // Skip empty sections
       
-      const section = document.createElement('div');
-      section.className = 'detail-section';
+      const section = utils.createElement('div', { class: 'detail-section' });
       
-      const sectionHeader = document.createElement('h3');
-      sectionHeader.textContent = sectionTitle;
+      const sectionHeader = utils.createElement('h3', {}, sectionTitle);
       section.appendChild(sectionHeader);
       
       // Add each field in the section
@@ -590,26 +625,20 @@ const modalManager = {
         // Skip empty fields
         if (!value || (Array.isArray(value) && value.length === 0)) return;
         
-        const detailItem = document.createElement('div');
-        detailItem.className = 'detail-item';
+        const detailItem = utils.createElement('div', { class: 'detail-item' });
         
-        const label = document.createElement('div');
-        label.className = 'detail-label';
-        label.textContent = field.split('_')
+        const label = utils.createElement('div', { class: 'detail-label' }, field.split('_')
           .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(' ');
+          .join(' '));
         
-        const valueElem = document.createElement('div');
-        valueElem.className = 'detail-value';
+        const valueElem = utils.createElement('div', { class: 'detail-value' });
         
         // Special handling for arrays - turn them into unordered lists
         if (Array.isArray(value)) {
-          const ul = document.createElement('ul');
-          ul.className = 'detail-list';
+          const ul = utils.createElement('ul', { class: 'detail-list' });
           
           value.forEach(item => {
-            const li = document.createElement('li');
-            li.innerHTML = utils.processText(item);
+            const li = utils.createElement('li', {}, utils.processText(item));
             ul.appendChild(li);
           });
           
@@ -617,11 +646,14 @@ const modalManager = {
         }
         // Special handling for hex code with larger swatch
         else if (field === 'hex_code') {
-          const swatch = document.createElement('span');
-          swatch.className = 'modal-swatch';
-          swatch.style.backgroundColor = value;
+          const swatch = utils.createElement('span', { 
+            class: 'modal-swatch', 
+            style: `background-color: ${value}`,
+            title: `Color: ${value}`
+          });
+          
           valueElem.appendChild(swatch);
-          valueElem.appendChild(document.createTextNode(value));
+          valueElem.appendChild(utils.createElement('span', {}, value));
         } 
         // For all other fields, process for chemical formulas and links
         else {
@@ -676,17 +708,16 @@ const modalManager = {
     
     // Create footnote items
     uniqueFootnotes.forEach(footnote => {
-      const li = document.createElement('li');
-      li.className = 'footnote-item';
+      const li = utils.createElement('li', { class: 'footnote-item' });
       
-      const link = document.createElement('a');
-      link.className = 'footnote-link';
-      link.href = footnote.url;
-      link.target = '_blank';
-      link.textContent = `[${footnote.number}]`;
+      const link = utils.createElement('a', { 
+        class: 'footnote-link', 
+        href: footnote.url, 
+        target: '_blank' 
+      }, `[${footnote.number}]`);
       
       li.appendChild(link);
-      li.appendChild(document.createTextNode(` ${footnote.source}`));
+      li.appendChild(utils.createElement('span', {}, ` ${footnote.source}`));
       
       footnotesList.appendChild(li);
     });

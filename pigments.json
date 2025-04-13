@@ -16,7 +16,7 @@
         "formula": "Na<sub>8-10</sub>Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>S<sub>2-4</sub>",
         "hex_code": "#120A8F",
         "history": "Highly prized in Renaissance art for painting robes of the Virgin Mary; more expensive than gold in Middle Ages [oai_citation_attribution:1‡colors.muz.li](https://colors.muz.li/color/ultramarine-blue#:~:text=4166F5,color%20of%20deep%20ocean%20waters); synthetic ultramarine made it affordable.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Lapis lazuli gemstone (mined, e.g., in Afghanistan)"
         ],
@@ -47,7 +47,7 @@
         "formula": "Na<sub>8-10</sub>Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>S<sub>2-4</sub> (modified sulfur content)",
         "hex_code": "#7D4DDB",
         "history": "Developed as a variant of synthetic ultramarine blue in the 19th century; provides a valuable purple option for artists with good permanence, though it's becoming increasingly rare in modern paint lines",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [],
         "not_used_reason": "",
         "origin": [
@@ -72,7 +72,7 @@
         "formula": "BaCuSi<sub>2</sub>O<sub>6</sub>",
         "hex_code": "#551A8B",
         "history": "One of the oldest known synthetic pigments; used in ancient China on prestigious objects including the Terracotta Army; demonstrates sophisticated chemical knowledge of ancient Chinese craftspeople; notable for its remarkable preservation in some archaeological discoveries",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [],
         "not_used_reason": "Historical pigment, not commercially produced for modern paints",
         "origin": [
@@ -129,7 +129,7 @@
         "formula": "HgS",
         "hex_code": "#E34234",
         "history": "Premier red in painting for centuries (used in Roman wall paintings, medieval manuscripts, Renaissance art); replaced in modern use by cadmium reds due to mercury toxicity.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Cinnabar ore (mined, e.g., Almaden in Spain, Idrija in Slovenia)"
         ],
@@ -160,7 +160,7 @@
         "formula": "CdS",
         "hex_code": "#FFD300",
         "history": "Introduced in the 19th century, provided a stable intense yellow for artists; still used in art paints, though environmental and health regulations limit cadmium in industrial applications.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Cadmium byproduct from zinc ores (refined and reacted with sulfur)"
         ],
@@ -189,7 +189,7 @@
         "formula": "Cd(S,Se)",
         "hex_code": "#E30022",
         "history": "Adopted by artists in the 20th century as a superior permanent red replacing mercury-based vermilion; widely used in oil and acrylic paints.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Cadmium metal (from zinc refining) reacted with sulfur and selenium"
         ],
@@ -218,7 +218,7 @@
         "formula": "(PbCO<sub>3</sub>)<sub>2</sub>·Pb(OH)<sub>2</sub> [oai_citation_attribution:5‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=,142%3A%20BaSO_%7B4%7D%E2%80%A2ZnS)",
         "hex_code": "#F8F4E3",
         "history": "The primary white pigment in oil painting from antiquity through the 19th century; used in everything from fine art to house paint until banned for toxicity.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Metallic lead sheets, vinegar and carbon dioxide (in old Dutch stack process)"
         ],
@@ -231,7 +231,7 @@
         "source": "Cerussite (synthetic form by corrosion of lead)",
         "synthesis": "Stack process: corroding lead in presence of acetic acid vapor and CO<sub>2</sub> to form white lead (used since ancient Rome)",
         "toxicity": "Highly toxic (causes lead poisoning)",
-        "type": "Both (occurs as mineral, but pigment made artificially since antiquity)"
+        "type": "Both (occurs as mineral; but pigment made artificially since antiquity)"
     },
     {
         "alt_names": [
@@ -250,7 +250,7 @@
         "formula": "TiO<sub>2</sub>",
         "hex_code": "#FFFFFF",
         "history": "Replaced lead white in most applications by mid-20th century; today it is the most commonly used white pigment worldwide (paints, plastics, paper, food) [oai_citation_attribution:10‡en.wikipedia.org](https://en.wikipedia.org/wiki/Brilliant_blue_FCF#:~:text=Brilliant%20blue%20FCF%20,considered%20nontoxic%20and%20safe%20for).",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Ilmenite ore or other titanium minerals (processed via sulfate or chloride process)"
         ],
@@ -262,7 +262,7 @@
         "source": "Titanium dioxide (rutile or anatase mineral source, produced industrially)",
         "synthesis": "Sulfate process (digestion of ilmenite) or Chloride process (chlorination of titanium ore) to produce pure TiO<sub>2</sub>",
         "toxicity": "Non-toxic (inert) - widely used even in foods and cosmetics",
-        "type": "Both (occurs as minerals, refined to pigment)"
+        "type": "Both (occurs as minerals; refined to pigment)"
     },
     {
         "alt_names": [
@@ -280,7 +280,7 @@
         "formula": "ZnO",
         "hex_code": "#F8FBF8",
         "history": "Introduced as a safer alternative to lead white in the 19th century; used in early impressionist palettes; still in artist paints, though largely supplanted by titanium white for opacity.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Metallic zinc vapor oxidized to ZnO (French process, 18th c.)"
         ],
@@ -310,7 +310,7 @@
         "formula": "As<sub>2</sub>S<sub>3</sub>",
         "hex_code": "#FFD200",
         "history": "Used in ancient Egypt, Persia and throughout the Middle Ages for illuminating manuscripts and painting; largely abandoned after the 19th century due to its extreme toxicity.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Natural orpiment mineral from volcanic fumaroles or hydrothermal veins (e.g., Ottoman Empire sources)"
         ],
@@ -339,7 +339,7 @@
         "formula": "As<sub>4</sub>S<sub>4</sub> [oai_citation_attribution:12‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=Arsenic%20pigments)",
         "hex_code": "#E54B17",
         "history": "Used since antiquity in East and West (in paintings, Chinese fireworks, medicines); its light-sensitivity and toxicity led to disuse.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Realgar mineral (often found with orpiment in nature)"
         ],
@@ -351,7 +351,7 @@
         "source": "Realgar mineral (arsenic sulfide ore)",
         "synthesis": "",
         "toxicity": "Highly toxic (arsenic compound)",
-        "type": "Both (naturally occurring, rarely prepared synthetically)"
+        "type": "Both (naturally occurring; rarely prepared synthetically)"
     },
     {
         "alt_names": [
@@ -368,7 +368,7 @@
         "formula": "Pb<SUB>2</SUB>Sb<SUB>2</SUB>O<SUB>7</SUB> (approx.)",
         "hex_code": "#F6E16C",
         "history": "Important pigment in European oil painting (especially 18th-19th c.) for flesh tones and bright highlights; production ceased once safer yellow pigments became available.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Lead and antimony oxides heated together (first synthesized in antiquity)"
         ],
@@ -380,7 +380,7 @@
         "source": "Lead(II) antimonate mineral (bindheimite), produced artificially",
         "synthesis": "",
         "toxicity": "Toxic (lead compound; antimony is hazardous)",
-        "type": "Both (occurs as rare mineral, but pigment made artificially)"
+        "type": "Both (occurs as rare mineral; but pigment made artificially)"
     },
     {
         "alt_names": [
@@ -397,7 +397,7 @@
         "formula": "Mg,Ca[C<sub>19</sub>H<sub>15</sub>O<sub>10</sub>]<sub>2</sub>·(H<sub>2</sub>O)<sub>n</sub> [oai_citation_attribution:14‡sciencedirect.com](https://www.sciencedirect.com/science/article/abs/pii/S0379073817301500#:~:text=ScienceDirect%20www,purportedly%20harvested%20from%20the)",
         "hex_code": "#F6A600",
         "history": "Used in Mughal Indian miniature painting and later by European artists (Turner, etc.) for its luminous glazing quality; production ended by early 20th century due to inhumane process [oai_citation_attribution:20‡webexhibits.org](https://www.webexhibits.org/pigments/indiv/recipe/indianyellow.html#:~:text=Indeed%2C%20the%20cows%20were%20extremely,1908%2C%20Indian%20Yellow%20pigment%20has).",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Urine of cows fed exclusively on mango leaves (historical method) [oai_citation_attribution:15‡webexhibits.org](https://www.webexhibits.org/pigments/indiv/recipe/indianyellow.html#:~:text=The%20urine%20was%20,Indian%20yellow) [oai_citation_attribution:16‡webexhibits.org](https://www.webexhibits.org/pigments/indiv/recipe/indianyellow.html#:~:text=Indeed%2C%20the%20cows%20were%20extremely,1908%2C%20Indian%20Yellow%20pigment%20has)"
         ],
@@ -426,7 +426,7 @@
         "formula": "N/A (mixture of organic compounds)",
         "hex_code": "#E49B0F",
         "history": "Used in East Asian painting and introduced to Europe in 17th century; popular for watercolor glazes and varnishes; now largely of historical interest.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Tree resin tapped from Garcinia species in Southeast Asia"
         ],
@@ -454,7 +454,7 @@
         "formula": "C<sub>18</sub>H<sub>18</sub>ClN<sub>...</sub> (varies by specific type)",
         "hex_code": "#FADA5E",
         "history": "Became popular mid-20th century as safer, cheaper replacements for toxic inorganic yellows in printing inks, plastics, and artist paints.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Petrochemical derivatives (aniline, acetoacetic acid etc.)"
         ],
@@ -483,7 +483,7 @@
         "formula": "Cr<sub>2</sub>O<sub>3</sub>·xH<sub>2</sub>O [oai_citation_attribution:21‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=,2%7DO)",
         "hex_code": "#40826D",
         "history": "Replaced earlier unstable copper greens; widely used by artists from the 19th century onward for its permanence (e.g., in Impressionist palettes).",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Sodium dichromate reduced by sulfur (process discovered by Pannetier 1838, patented by Guignet 1859)"
         ],
@@ -512,7 +512,7 @@
         "formula": "Cr<sub>2</sub>O<sub>3</sub>",
         "hex_code": "#3A5F0B",
         "history": "Used in camouflages and oil paints (e.g., by Cézanne); remains important in ceramics and coatings for its heat stability.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Chromite ore processed to chromium oxide"
         ],
@@ -541,7 +541,7 @@
         "formula": "Cu(C<sub>2</sub>H<sub>3</sub>O<sub>2</sub>)<sub>2</sub>·3Cu(AsO<sub>2</sub>)<sub>2</sub>",
         "hex_code": "#50C878",
         "history": "Favored in Victorian wallpapers, Impressionist paints (Cézanne, Monet) for its vivid hue; caused poisonings; production ceased by early 20th century.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Reaction of copper vitriol (CuSO4) with arsenious oxide and acetate (first made circa 1814 in Schweinfurt, Germany)"
         ],
@@ -570,7 +570,7 @@
         "formula": "Cu<sub>2</sub>CO<sub>3</sub>(OH)<sub>2</sub> [oai_citation_attribution:26‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=,2)",
         "hex_code": "#279A78",
         "history": "One of the oldest green pigments, used in Egyptian tomb paintings and medieval European art; largely phased out in favor of more stable synthetic greens by 19th century.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Malachite ore (mined in Urals, Middle East, etc.)"
         ],
@@ -599,7 +599,7 @@
         "formula": "Cu(CH<sub>3</sub>COO)<sub>2</sub>·CuO·6H<sub>2</sub>O (approximate basic acetate)",
         "hex_code": "#3EB489",
         "history": "Widely used from ancient times through 18th century especially in oil and tempera; notorious for its degradation and color change, thus abandoned in favor of stable pigments.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Copper metal plates exposed to vinegar vapors (historical method)"
         ],
@@ -629,7 +629,7 @@
         "formula": "C<sub>18</sub>Fe<sub>7</sub>N<sub>18</sub>",
         "hex_code": "#003153",
         "history": "First modern synthetic pigment; revolutionized art palettes in the 18th century; used in everything from Hokusai's prints (as \"Berlin Blue\") to blueprint paper.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Reaction of ferrocyanide (from blood potash) with iron salts (discovered by accident in 1706 in Berlin)"
         ],
@@ -658,7 +658,7 @@
         "formula": "CoAl<sub>2</sub>O<sub>4</sub>",
         "hex_code": "#0047AB",
         "history": "Introduced in early 19th century as a superior permanent blue; widely used in fine art, ceramics (blue glazes), and paints (notably in Impressionist skies).",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Cobalt ore (smaltite) roasted with alumina (invented by Thénard in 1802 in France)"
         ],
@@ -687,7 +687,7 @@
         "formula": "CoSnO<sub>3</sub> (often written as CoO·nSnO<sub>2</sub>)",
         "hex_code": "#2A52BE",
         "history": "Adopted in the late 19th century for sky and water tones in painting; remains in use in artist palettes for its unique turquoise-blue hue.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Cobalt and tin oxides calcined together (first made 1805)"
         ],
@@ -715,7 +715,7 @@
         "formula": "BaMnO<sub>4</sub> + BaSO<sub>4</sub> (as co-precipitated solid)",
         "hex_code": "#01A0D9",
         "history": "Introduced mid-20th century and loved by watercolorists for its unique hue; production stopped by late 20th century, now largely replaced by phthalo blue mixes.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Reaction of barium salt with potassium permanganate under specific conditions (first made 1935)"
         ],
@@ -830,7 +830,7 @@
         "formula": "C<sub>26</sub>H<sub>18</sub>O<sub>13</sub> (major dye component laccaic acid A)",
         "hex_code": "#9E3332",
         "history": "Used since ancient times in South Asia; introduced to Europe in 17th century as 'lac lake' for painting; also source of shellac. Supplanted by cochineal and synthetic dyes.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Lac resin harvested from trees in India/SE Asia, extracted into red dye"
         ],
@@ -859,7 +859,7 @@
         "formula": "C<sub>22</sub>H<sub>20</sub>O<sub>13</sub> (carminic acid) with Al/Ca",
         "hex_code": "#960018",
         "history": "One of the most valuable dyes of the New World, widely used in textiles and painting from the 16th century onward; today still used as natural food coloring (E120) and in cosmetics [oai_citation_attribution:38‡en.wikipedia.org](https://en.wikipedia.org/wiki/Cochineal#:~:text=,Carmine%20dye%20was%20used).",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Dried cochineal insects (harvested from prickly pear cacti in Latin America) [oai_citation_attribution:35‡en.wikipedia.org](https://en.wikipedia.org/wiki/Cochineal#:~:text=,Carmine%20dye%20was%20used)"
         ],
@@ -887,7 +887,7 @@
         "formula": "C<sub>16</sub>H<sub>10</sub>O<sub>8</sub> (kermesic acid)",
         "hex_code": "#9D2933",
         "history": "One of the oldest red dyes (mentioned in the Bible as scarlet); key source of medieval crimson for luxury textiles; largely replaced by cochineal after the 1500s [oai_citation_attribution:41‡en.wikipedia.org](https://en.wikipedia.org/wiki/Kermes_(dye)#:~:text=The%20kermes%20dye%20is%20a,more%20easily%20obtained%2C%20%2066).",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Dried female Kermes insects from Mediterranean oaks [oai_citation_attribution:39‡en.wikipedia.org](https://en.wikipedia.org/wiki/Kermes_(dye)#:~:text=Kermes%20is%20a%20red%20dye,1)"
         ],
@@ -915,7 +915,7 @@
         "formula": "C<sub>16</sub>H<sub>8</sub>Br<sub>2</sub>N<sub>2</sub>O<sub>2</sub>",
         "hex_code": "#66023C",
         "history": "Symbol of royalty and prestige in ancient world due to its exorbitant cost [oai_citation_attribution:44‡en.wikipedia.org](https://en.wikipedia.org/wiki/Tyrian_purple#:~:text=Lebanon%20%2C%20once%20Phoenicia%20,compound%20%20is%20%2083); production faded out after the fall of Constantinople (15th c.) [oai_citation_attribution:45‡en.wikipedia.org](https://en.wikipedia.org/wiki/Tyrian_purple#:~:text=their%20production%20were%20kept%20secret,alphabet%20of%20Phoenician%20origin%2C%20Phoenician).",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Hypobranchial gland of Murex sea snails (e.g., Bolinus brandaris) [oai_citation_attribution:42‡en.wikipedia.org](https://en.wikipedia.org/wiki/Tyrian_purple#:~:text=known%20as%20royal%20purple%2C%20imperial,dibromoindigo)"
         ],
@@ -942,7 +942,7 @@
         "formula": "N/A (complex organic mixture including bitumen)",
         "hex_code": "#915C40",
         "history": "Used from the 16th c. through 19th c. in European art for flesh tones and shading; production ceased by the 20th c. after supply exhausted and artists learned its morbid origin [oai_citation_attribution:49‡smithsonianmag.com](https://www.smithsonianmag.com/smart-news/ground-mummies-were-once-ingredient-paint-180950350/#:~:text=,more%20or%20less%20ran%20out).",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Egyptian mummies (human or cat) pulverized with myrrh and pitch [oai_citation_attribution:46‡smithsonianmag.com](https://www.smithsonianmag.com/smart-news/ground-mummies-were-once-ingredient-paint-180950350/#:~:text=,more%20or%20less%20ran%20out)"
         ],
@@ -968,7 +968,7 @@
         "formula": "Contains melanin polymers (eumelanin)",
         "hex_code": "#704214",
         "history": "Used as writing and drawing ink since classical antiquity; in 18th-19th c., popular as a drawing wash for its rich brown tone; now mostly historical or specialty use.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Cuttlefish (Mediterranean species) ink collected and precipitated with alkali"
         ],
@@ -1023,7 +1023,7 @@
         "formula": "C (nearly pure carbon) [oai_citation_attribution:50‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=Carbonaceous%20pigments)",
         "hex_code": "#101010",
         "history": "One of the oldest pigments (cave paintings with lamp/charcoal black); widely used in ink (Chinese ink, etc.) and paint; modern carbon black for inks is similar in composition.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Incompleted combustion of linseed oil lamps, collected as soot"
         ],
@@ -1051,7 +1051,7 @@
         "formula": "C + various inorganic ash",
         "hex_code": "#1B1B1B",
         "history": "Common black in old master drawings (charcoal sticks) and 19th c. oil paint; provides a less intense black useful for subtle shadows.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Vines, twigs or wood heated without oxygen (charcoal making)"
         ],
@@ -1079,7 +1079,7 @@
         "formula": "Fe<sub>3</sub>O<sub>4</sub> [oai_citation_attribution:53‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=Iron%20pigments)",
         "hex_code": "#222222",
         "history": "One of the 'Mars' series of synthetic iron oxides; gained popularity in 20th century as an alternative to carbon blacks for faster drying and matte finish.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Chemical precipitation of iron salts or thermal decomposition yielding magnetite (19th c.)"
         ],
@@ -1106,7 +1106,7 @@
         "formula": "Fe<sub>2</sub>O<sub>3</sub>·nH<sub>2</sub>O + clay minerals [oai_citation_attribution:55‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=,in%20art%20since%20prehistoric%20times)",
         "hex_code": "#905D1D",
         "history": "Used by prehistoric cave painters and continuously since; staple earth color for underpaintings and skin tones in classical art.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Earth deposits (notably Tuscany, Italy originally)"
         ],
@@ -1132,7 +1132,7 @@
         "formula": "Fe<sub>2</sub>O<sub>3</sub> + SiO<sub>2</sub> etc. (after heating, water driven off)",
         "hex_code": "#6E260E",
         "history": "Adopted into palettes for warmer shadows after the practice of calcining earths was discovered; common in oil, acrylic, watercolor for warm brown tones.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Raw sienna earth roasted at high temperature"
         ],
@@ -1157,7 +1157,7 @@
         "formula": "Fe<sub>2</sub>O<sub>3</sub> + MnO<sub>2</sub> + Al<sub>2</sub>O<sub>3</sub> + SiO<sub>2</sub> + nH<sub>2</sub>O [oai_citation_attribution:56‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=,and%20has%20more%20intense%20colors)",
         "hex_code": "#635147",
         "history": "Important earth tone since prehistoric painting; used extensively in Baroque painting for deep shadows and in wood finishes.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Earth from Umbria, Italy (name origin) and other deposits"
         ],
@@ -1183,7 +1183,7 @@
         "formula": "Fe<sub>2</sub>O<sub>3</sub> + Mn<sub>3</sub>O<sub>4</sub> (after heating, combined oxides)",
         "hex_code": "#5C3317",
         "history": "Common artist pigment for deep shadows; in 19th c. became a standard in oil sets for underpainting and neutral dark mixtures.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Raw umber earth roasted in furnace"
         ],
@@ -1211,7 +1211,7 @@
         "formula": "α-FeO(OH) + clay minerals [oai_citation_attribution:57‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=Iron%20pigments)",
         "hex_code": "#C2B280",
         "history": "One of the first pigments used by humans (cave art); core staple of every historical painting palette for flesh tones and ground layers.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Earth deposits (France, Cyprus, etc.) with iron oxide content"
         ],
@@ -1239,7 +1239,7 @@
         "formula": "Fe<sub>2</sub>O<sub>3</sub> [oai_citation_attribution:59‡en.wikipedia.org](https://en.wikipedia.org/wiki/List_of_inorganic_pigments#:~:text=Iron%20oxide%20pigments)",
         "hex_code": "#913831",
         "history": "Another primordial pigment; used in prehistoric burials and art; in Renaissance known as Venetian red, widely used for underpainting and warm shadows.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Earth rich in hematite (e.g., Venetian red, Indian red varieties)"
         ],
@@ -1266,7 +1266,7 @@
         "formula": "SiO<sub>2</sub> + K<sub>2</sub>O + CoO (in glass matrix)",
         "hex_code": "#5767A3",
         "history": "One of the only blues available in European painting before Prussian blue and synthetic ultramarine; used widely in 16th-17th centuries but known to discolor and fade.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Cobalt ore (smaltite) melted with sand and potash into blue glass, then ground"
         ],
@@ -1327,7 +1327,7 @@
         "formula": "C<sub>32</sub>H<sub>16</sub>CuN<sub>8</sub>",
         "hex_code": "#0B6EF8",
         "history": "Transformed modern paint palettes since the 1930s; widely used in paints, inks, plastics for its vivid color and stability (e.g., printing process cyan).",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Phthalic anhydride, urea, copper salts in chemical reaction (accidentally discovered 1927)"
         ],
@@ -1355,7 +1355,7 @@
         "formula": "C<sub>32</sub>H<sub>16</sub>Cl<sub>x</sub>CuN<sub>8</sub>",
         "hex_code": "#008672",
         "history": "Replaced older greens in virtually all applications post-1940s; staple in printing, artist paints (the ubiquitous 'phthalo green'), automotive finishes, etc.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Derived from phthalocyanine blue via chlorination process"
         ],
@@ -1381,7 +1381,7 @@
         "formula": "Mixture of related purple azine salts [oai_citation_attribution:62‡en.wikipedia.org](https://en.wikipedia.org/wiki/Mauveine#:~:text=Mauveine%20is%20a%20mixture%20of,6)",
         "hex_code": "#8D029B",
         "history": "The first synthetic organic dye; sparked the modern chemical industry; fashionable in the late 1850s but quickly superseded by more robust dyes [oai_citation_attribution:66‡edu.rsc.org](https://edu.rsc.org/feature/the-battle-for-magenta/2020242.article#:~:text=Three%20years%20after%20the%20discovery,and%20is%20still%20used%20today).",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Synthesized from aniline (coal tar) and potassium dichromate oxidizer [oai_citation_attribution:63‡en.wikipedia.org](https://en.wikipedia.org/wiki/Mauveine#:~:text=Mauveine%20is%20a%20mixture%20of,6)"
         ],
@@ -1434,7 +1434,7 @@
         "formula": "C<sub>32</sub>H<sub>22</sub>N<sub>6</sub>Na<sub>2</sub>O<sub>6</sub>S<sub>2</sub>",
         "hex_code": "#F94D56",
         "history": "One of the earliest direct cotton dyes; historically significant in dye chemistry and as a laboratory pH indicator, but withdrawn from commercial use due to health hazards.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Synthesized from benzidine and naphthalene sulfonic acids (1884)"
         ],
@@ -1465,7 +1465,7 @@
         "formula": "C<sub>16</sub>H<sub>9</sub>N<sub>4</sub>Na<sub>3</sub>O<sub>9</sub>S<sub>2</sub>",
         "hex_code": "#FFD700",
         "history": "One of the most commonly used artificial food colorings since the mid-20th century; its use has been contentious with periodic bans or warnings in various countries.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Petroleum-derived intermediates (e.g., sulfanilic acid, etc.)"
         ],
@@ -1494,7 +1494,7 @@
         "formula": "C<sub>18</sub>H<sub>14</sub>N<sub>2</sub>Na<sub>2</sub>O<sub>8</sub>S<sub>2</sub>",
         "hex_code": "#FF2B4F",
         "history": "Became the primary red food dye after older reds (Amaranth, Red #2) were banned; now ubiquitous in candies, soft drinks, and cosmetics globally [oai_citation_attribution:82‡en.wikipedia.org](https://en.wikipedia.org/wiki/Allura_Red_AC#:~:text=Allura%20Red%20AC%20has%20previously,In%20Norway%20and).",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Petroleum-derived chemicals (naphthalene derivatives)"
         ],
@@ -1524,7 +1524,7 @@
         "formula": "C<sub>37</sub>H<sub>34</sub>N<sub>2</sub>Na<sub>2</sub>O<sub>9</sub>S<sub>3</sub>",
         "hex_code": "#1F75FE",
         "history": "One of the most widely used synthetic blue pigments in food, beverages, and cosmetics; ubiquitous in candy, sports drinks, cereals, ice creams, and packaged foods. Also used in scientific and biomedical research as a tracer dye ('blue dye'); certified for use in the US since 1969. [oai_citation_attribution:87‡en.wikipedia.org](https://en.wikipedia.org/wiki/Brilliant_blue_FCF#:~:text=Brilliant%20blue%20FCF%20,considered%20nontoxic%20and%20safe%20for)",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Derived from coal tar / petrochemical intermediates (introduced 1920s)"
         ],
@@ -1553,7 +1553,7 @@
         "formula": "Y<sub>2</sub>O<sub>2</sub>S:Eu<sup>3+</sup> [oai_citation_attribution:88‡en.wikipedia.org](https://en.wikipedia.org/wiki/Phosphor#:~:text=match%20at%20L798%20P22R%20,Green%20phosphor%20for%20TV%20screens)",
         "hex_code": "#FF4500",
         "history": "Enabled red pixels in color CRT televisions and monitors for decades; an example of a physical luminescent pigment used in displays.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "High-purity chemical precipitation of yttrium, europium compounds, fired into phosphor"
         ],
@@ -1580,7 +1580,7 @@
         "formula": "(Zn,Cd)S:Cu,Al [oai_citation_attribution:90‡en.wikipedia.org](https://en.wikipedia.org/wiki/Phosphor#:~:text=P22R%20%20Y_,Green%20phosphor%20for%20TV%20screens)",
         "hex_code": "#66FF66",
         "history": "The primary green in CRT TV screens; also used in radar screens (early cathode ray tubes) as a common fluorescent material.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Fusion of zinc, sulfur and dopants in controlled atmosphere to form phosphor powder"
         ],
@@ -1607,7 +1607,7 @@
         "formula": "ZnS:Ag [oai_citation_attribution:92‡en.wikipedia.org](https://en.wikipedia.org/wiki/Phosphor#:~:text=short%20afterglow%20with%20200%20nanosecond,blue%20phosphor%20in%20color%20CRTs)",
         "hex_code": "#7EC0EE",
         "history": "Standard blue phosphor in color television CRTs and many oscilloscopes; part of the trio enabling full-color TV in the 20th century.",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [
             "Chemical precipitation then firing of ZnS with Ag doping"
         ],
@@ -1633,7 +1633,7 @@
         "formula": "CdSe (core), ZnS (shell)",
         "hex_code": "#FF003D",
         "history": "Represents the new class of 'physical' pigments used in cutting-edge displays; provides wide color gamut in QLED televisions and other nano-enabled display technologies.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Chemical synthesis in solution (organometallic precursors of Cd and Se) to form monodisperse nanocrystals"
         ],
@@ -1688,7 +1688,7 @@
         "formula": "Proprietary (PMS 1837)",
         "hex_code": "#81D8D0",
         "history": "First used in 1845 on the cover of Tiffany's Blue Book; became the signature color of the brand's packaging; registered as a color trademark in 1998; the PMS number 1837 references the year of Tiffany's foundation",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [],
         "not_used_reason": "",
         "origin": [
@@ -1717,7 +1717,7 @@
         "formula": "C<sub>20</sub>H<sub>12</sub>N<sub>2</sub>O<sub>2</sub>",
         "hex_code": "#D81B60",
         "history": "Revolutionized artists' reds in the mid-20th century as a lightfast replacement for alizarin; also widely used in automotive paints and printing inks.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Derived from coal tar intermediates (discovered in 1958 by DuPont)"
         ],
@@ -1745,7 +1745,7 @@
         "formula": "Proprietary (not disclosed)",
         "hex_code": "#FF0090",
         "history": "Created in 2016 by artist Stuart Semple in response to Anish Kapoor's exclusive rights to Vantablack. Became famous through the art world controversy when Semple banned Kapoor from purchasing it, making it available to everyone except Kapoor as a statement about art material accessibility.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [],
         "not_used_reason": "",
         "origin": [
@@ -1796,7 +1796,7 @@
         "formula": "BaCuSi₄O₁₀",
         "hex_code": "#2C6FBB",
         "history": "Ancient Chinese pigment discovered alongside Han Purple; used in tomb decorations, ceramics, and other artifacts; demonstrates the sophisticated chemical knowledge of ancient Chinese artisans; its formulation is similar to Egyptian Blue but was developed independently",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [],
         "not_used_reason": "Historical pigment, not commercially produced for modern paints",
         "origin": [
@@ -1823,7 +1823,7 @@
         "formula": "C<sub>34</sub>H<sub>22</sub>Cl<sub>2</sub>N<sub>4</sub>O<sub>2</sub>",
         "hex_code": "#6F00FF",
         "history": "Provided artists and industries a very strong, lightfast purple; replaced less stable mixtures; used in paints, plastics, printer toners, etc.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Derived from carbazole coal-tar chemical, first commercialized in 1950s"
         ],
@@ -1878,7 +1878,7 @@
         "formula": "PbCrO4",
         "hex_code": "#FFA700",
         "history": "Popular in 19th century painting (famously used by Vincent van Gogh); gradually replaced by cadmium yellows and modern alternatives due to toxicity concerns",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [],
         "not_used_reason": "Toxicity (contains lead and hexavalent chromium)",
         "origin": [
@@ -1905,7 +1905,7 @@
         "formula": "PbCrO4 + Fe4[Fe(CN)6]3",
         "hex_code": "#138808",
         "history": "Common in 19th century house paints and commercial applications; not to be confused with chromium oxide green (a different, safer pigment); largely obsolete today due to toxicity and availability of safer alternatives",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [],
         "not_used_reason": "Toxicity (contains lead and hexavalent chromium)",
         "origin": [
@@ -1962,7 +1962,7 @@
         "formula": "Pb2SnO4 (type I) or PbSn1-xSixO3 (type II)",
         "hex_code": "#FFD700",
         "history": "Important yellow pigment in European paintings from 1300-1750; mysteriously fell out of use and was 'rediscovered' by art conservators in the 20th century; appears in works by Vermeer, Raphael and other Old Masters",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [],
         "not_used_reason": "Historical pigment; no longer produced due to lead toxicity",
         "origin": [
@@ -1988,7 +1988,7 @@
         "formula": "K2O·4ZnCrO4·3H2O",
         "hex_code": "#FFF700",
         "history": "Used in 19th-early 20th century painting; also used as industrial corrosion inhibitor for metals; fell out of favor due to fugitive nature and toxicity",
-        "in_use": false,
+        "in_use": "No",
         "natural_sources": [],
         "not_used_reason": "Toxicity (contains hexavalent chromium) and poor lightfastness",
         "origin": [
@@ -2015,7 +2015,7 @@
         "formula": "NH4MnP2O7",
         "hex_code": "#9F00FF",
         "history": "Introduced in the late 19th century as a more permanent alternative to fugitive organic purples; used by Post-Impressionist painters; remains in use in artist paints",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [],
         "not_used_reason": "",
         "origin": [
@@ -2042,7 +2042,7 @@
         "formula": "(Ti,Ni,Sb)O2",
         "hex_code": "#EFD334",
         "history": "Developed as a non-toxic alternative to chrome and cadmium yellows; primarily used in industrial applications requiring heat stability (ceramics, plastics) but also available in some artist paints",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [],
         "not_used_reason": "",
         "origin": [
@@ -2093,7 +2093,7 @@
         "formula": "C<sub>26</sub>H<sub>18</sub>N<sub>2</sub>O<sub>4</sub>",
         "hex_code": "#5F2120",
         "history": "One of the modern synthetic organic pigments expanding the range of stable deep reds for artists and automotive paints in the late 20th century.",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [
             "Derived from anthracene (coal tar) chemistry, developed mid-20th c."
         ],
@@ -2122,7 +2122,7 @@
         "formula": "C<sub>28</sub>H<sub>14</sub>N<sub>2</sub>O<sub>4</sub>",
         "hex_code": "#002FA7",
         "history": "Originally developed as a textile dye, Indanthrone became an important artist pigment in the mid-20th century when made into a lake; provides a more subdued alternative to phthalocyanine blue in artist palettes",
-        "in_use": true,
+        "in_use": "Yes",
         "natural_sources": [],
         "not_used_reason": "",
         "origin": [

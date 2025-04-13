@@ -1,49 +1,70 @@
 :root {
-    --primary-color: #3949ab;
-    --secondary-color: #e8eaf6;
-    --gradient-start-color: #3949ab;
-    --gradient-end-color: #8c9eff;
-    --border-color: #c9c9c9;
-    --text-color: #212121;
-    --hover-color: #e3e5f1;
-    --background-color: #f5f5f5;
-    --card-background: white;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    --focus-outline-color: #3949ab;
-    --contrast-ratio-note: "7:1 ratio for AAA compliance";
+    /* Primary UI Elements */
+    --brand-main: #3949ab;
+    --brand-accent: #e8eaf6;
+    --accent-start: #3949ab;
+    --accent-end: #8c9eff;
+    --separator: #c9c9c9;
+    --content: #212121;
+    --interactive: #e3e5f1;
+    --surface-main: #f5f5f5;
+    --surface-elevated: white;
+    --overlay: rgba(0, 0, 0, 0.2);
+    --focus-ring: #3949ab;
+    --accessibility-note: "7:1 ratio for AAA compliance";
 
-    /* New color variables */
-    --white: #ffffff;
-    --primary-rgba-light: rgba(92, 107, 192, 0.4);
-    --primary-rgba-lighter: rgba(92, 107, 192, 0.15);
-    --primary-rgba-medium: rgba(92, 107, 192, 0.3);
-    --primary-rgba-focus: rgba(63, 81, 181, 0.4);
-    --shadow-medium: rgba(0, 0, 0, 0.3);
-    --shadow-darker: rgba(0, 0, 0, 0.5);
-    --shadow-darkest: rgba(0, 0, 0, 0.8);
-    --light-purple: #d1d9ff;
-    --red: #e53935;
-    --red-light-bg: #ffebee;
-    --red-light-border: #ffcdd2;
-    --red-rgba-bg: rgba(229, 57, 53, 0.1);
+    /* Supporting UI Elements */
+    --neutral-lightest: #ffffff;
+    --brand-translucent-medium: rgba(92, 107, 192, 0.4);
+    --brand-translucent-light: rgba(92, 107, 192, 0.15);
+    --brand-translucent-regular: rgba(92, 107, 192, 0.3);
+    --focus-indicator: rgba(63, 81, 181, 0.4);
+    --overlay-medium: rgba(0, 0, 0, 0.3);
+    --overlay-heavy: rgba(0, 0, 0, 0.5);
+    --overlay-maximum: rgba(0, 0, 0, 0.8);
+    --highlight-light: #d1d9ff;
+
+    /* Status and Feedback */
+    --alert: #e53935;
+    --alert-surface: #ffebee;
+    --alert-border: #ffcdd2;
+    --alert-bg-translucent: rgba(229, 57, 53, 0.1);
 }
 
 [data-theme="dark"] {
-    --primary-color: #8c9eff;
-    --secondary-color: #1a237e;
-    --gradient-start-color: #3949ab;
-    --gradient-end-color: #1a237e;
-    --border-color: #666;
-    --text-color: var(--white);
-    --hover-color: #353964;
-    --background-color: #121212;
-    --card-background: #242424;
-    --shadow-color: var(--shadow-darker);
-    --focus-outline-color: #8c9eff;
+    /* Primary UI Elements */
+    --brand-main: #8c9eff;
+    --brand-accent: #1a237e;
+    --accent-start: #3949ab;
+    --accent-end: #1a237e;
+    --separator: #666;
+    --content: var(--neutral-lightest);
+    --interactive: #353964;
+    --surface-main: #121212;
+    --surface-elevated: #242424;
+    --overlay: var(--overlay-heavy);
+    --focus-ring: #8c9eff;
 
-    /* Dark theme specific colors */
-    --th-background: #1a237e;
-    --th-hover: #283593;
+    /* Dark theme specific elements */
+    --header-bg: #1a237e;
+    --header-hover: #283593;
+
+    /* Supporting UI Elements */
+    --neutral-lightest: #ffffff;
+    --brand-translucent-medium: rgba(92, 107, 192, 0.4);
+    --brand-translucent-light: rgba(92, 107, 192, 0.15);
+    --brand-translucent-regular: rgba(92, 107, 192, 0.3);
+    --focus-indicator: rgba(63, 81, 181, 0.4);
+    --overlay-medium: rgba(0, 0, 0, 0.3);
+    --overlay-heavy: rgba(0, 0, 0, 0.5);
+    --overlay-maximum: rgba(0, 0, 0, 0.8);
+    --highlight-light: #d1d9ff;
+
+    /* Status and Feedback */
+    --alert: #e53935;
+    --alert-surface: #ffebee;
+    --alert-border: #ffcdd2;
+    --alert-bg-translucent: rgba(229, 57, 53, 0.1);
 }
 
 html,
@@ -56,8 +77,8 @@ body {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--content);
+    background-color: var(--surface-main);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -65,11 +86,11 @@ body {
 }
 
 h1 {
-    color: var(--primary-color);
+    color: var(--brand-main);
     text-align: center;
     margin: 0.5rem 0;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--brand-main);
     font-weight: 700;
 }
 
@@ -87,11 +108,11 @@ h1 {
 }
 
 .summary-box {
-    background: linear-gradient(135deg, var(--gradient-start-color) 0%, var(--gradient-end-color) 100%);
-    color: var(--text-color);
+    background: linear-gradient(135deg, var(--accent-start) 0%, var(--accent-end) 100%);
+    color: var(--content);
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 4px 20px var(--shadow-color);
+    box-shadow: 0 4px 20px var(--overlay);
 }
 
 .summary-content h2 {
@@ -113,13 +134,13 @@ h1 {
 }
 
 .stat-item {
-    background-color: var(--card-background);
+    background-color: var(--surface-elevated);
     padding: 0.5rem 1rem;
     border-radius: 6px;
     flex: 1 1 auto;
     min-width: 100px;
     backdrop-filter: blur(5px);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--separator);
 }
 
 .stat-value {
@@ -160,11 +181,11 @@ h1 {
 
 .filter-select,
 #searchInput {
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--separator);
     border-radius: 6px;
-    background-color: var(--card-background);
-    color: var(--text-color);
-    box-shadow: 0 1px 3px var(--shadow-color);
+    background-color: var(--surface-elevated);
+    color: var(--content);
+    box-shadow: 0 1px 3px var(--overlay);
     transition: all 0.3s ease;
 }
 
@@ -186,8 +207,8 @@ h1 {
 .filter-select:focus,
 #searchInput:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px var(--primary-rgba-light);
+    border-color: var(--brand-main);
+    box-shadow: 0 0 0 3px var(--brand-translucent-medium);
 }
 
 .filter-group::after {
@@ -196,24 +217,24 @@ h1 {
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--primary-color);
+    color: var(--brand-main);
     pointer-events: none;
     font-size: 1.4rem;
     font-weight: bold;
 }
 
 .filter-group:hover::after {
-    color: var(--primary-color);
+    color: var(--brand-main);
 }
 
 .reset-btn,
 .theme-toggle {
-    background: linear-gradient(135deg, var(--gradient-start-color) 0%, var(--gradient-end-color) 100%);
-    color: var(--text-color);
+    background: linear-gradient(135deg, var(--accent-start) 0%, var(--accent-end) 100%);
+    color: var(--content);
     border: none;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 2px 4px var(--shadow-color);
+    box-shadow: 0 2px 4px var(--overlay);
 }
 
 .reset-btn {
@@ -225,20 +246,20 @@ h1 {
 }
 
 .reset-btn:hover {
-    background-color: var(--hover-color);
+    background-color: var(--interactive);
     transform: translateY(-2px);
-    box-shadow: 0 3px 6px var(--shadow-medium);
+    box-shadow: 0 3px 6px var(--overlay-medium);
 }
 
 .reset-btn:focus,
 .theme-toggle:focus {
     outline: none;
-    box-shadow: 0 0 0 3px var(--focus-outline-color);
+    box-shadow: 0 0 0 3px var(--focus-ring);
 }
 
 .reset-btn:active {
     transform: translateY(1px);
-    box-shadow: 0 1px 2px var(--shadow-medium);
+    box-shadow: 0 1px 2px var(--overlay-medium);
 }
 
 .theme-toggle {
@@ -257,18 +278,18 @@ h1 {
 
 .theme-toggle:hover {
     transform: rotate(30deg);
-    background-color: var(--hover-color);
-    box-shadow: 0 3px 8px var(--shadow-color);
+    background-color: var(--interactive);
+    box-shadow: 0 3px 8px var(--overlay);
 }
 
 .table-container {
     flex: 1;
     overflow: auto;
-    box-shadow: 0 3px 12px var(--shadow-color);
+    box-shadow: 0 3px 12px var(--overlay);
     border-radius: 8px;
-    background: var(--card-background);
+    background: var(--surface-elevated);
     min-height: 0;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--separator);
 }
 
 table {
@@ -281,17 +302,18 @@ th,
 td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--separator);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    hyphens: auto;
+    hyphens: none;
+    padding: 6px 10px;
 }
 
 th {
     align-items: center;
-    background-color: var(--secondary-color);
-    box-shadow: 0 1px 3px var(--shadow-color);
-    color: var(--primary-color);
+    background-color: var(--brand-accent);
+    box-shadow: 0 1px 3px var(--overlay);
+    color: var(--brand-main);
     cursor: pointer;
     font-weight: 700;
     justify-content: space-between;
@@ -304,17 +326,22 @@ th {
     z-index: 10;
 }
 
+td ul {
+    padding-left: 0;
+    margin: 5px 0 5px 15px;
+}
+
 [data-theme="dark"] th {
-    color: var(--white);
-    background-color: var(--th-background);
+    color: var(--neutral-lightest);
+    background-color: var(--header-bg);
 }
 
 th:hover {
-    background-color: var(--light-purple);
+    background-color: var(--highlight-light);
 }
 
 [data-theme="dark"] th:hover {
-    background-color: var(--th-hover);
+    background-color: var(--header-hover);
 }
 
 .sort-indicator {
@@ -333,16 +360,17 @@ th[aria-sort="descending"] .sort-indicator::after {
 }
 
 tr:hover {
-    background-color: var(--hover-color);
+    background-color: var(--interactive);
     cursor: pointer;
 }
 
 .swatch,
 .modal-swatch {
     display: inline-block;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--separator);
     vertical-align: middle;
     position: relative;
+    cursor: pointer;
 }
 
 .swatch {
@@ -352,22 +380,45 @@ tr:hover {
     border-radius: 4px;
 }
 
-.swatch-large,
-.swatch:hover::after,
-.modal-swatch:hover::after {
+.swatch-large {
     position: absolute;
     border-radius: 8px;
-    border: 2px solid var(--border-color);
-    box-shadow: 0 5px 15px var(--shadow-color);
+    border: 2px solid var(--separator);
+    box-shadow: 0 5px 15px var(--overlay);
     z-index: 50;
     pointer-events: none;
     background-color: inherit;
     width: 100px;
     height: 100px;
-    transform: translateY(10px);
-    transition: opacity 0.2s, transform 0.2s;
-    opacity: 1;
-    transform: translateY(0);
+}
+
+.color-tooltip {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -130px;
+    background-color: var(--surface-elevated);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--overlay);
+    z-index: 60;
+    width: 120px;
+    text-align: center;
+    border: 2px solid var(--separator);
+    flex-direction: column;
+    align-items: center;
+}
+
+.swatch:hover .color-tooltip {
+    display: flex;
+}
+
+.hex-code-text {
+    margin-top: 8px;
+    font-size: 12px;
+    font-family: monospace;
+    color: var(--content);
 }
 
 .modal-swatch {
@@ -379,11 +430,17 @@ tr:hover {
 
 .modal-swatch:hover::after {
     content: '';
+    position: absolute;
     left: 100%;
     top: 50%;
     transform: translateY(-50%);
     width: 80px;
     height: 80px;
+    background-color: inherit;
+    border-radius: 8px;
+    border: 2px solid var(--separator);
+    box-shadow: 0 5px 15px var(--overlay);
+    z-index: 100;
     margin-left: 10px;
 }
 
@@ -396,25 +453,25 @@ tr:hover {
 
 .citation-link {
     display: inline-block;
-    color: var(--primary-color);
+    color: var(--brand-main);
     text-decoration: underline;
     font-weight: 600;
     border-radius: 3px;
     padding: 0 3px;
     margin: 0 2px;
-    background-color: var(--primary-rgba-lighter);
+    background-color: var(--brand-translucent-light);
     transition: all 0.2s ease;
     position: relative;
 }
 
 .citation-link:hover {
-    background-color: var(--primary-rgba-medium);
+    background-color: var(--brand-translucent-regular);
     text-decoration: underline;
 }
 
 .citation-link:focus {
     outline: none;
-    box-shadow: 0 0 0 3px var(--primary-rgba-focus);
+    box-shadow: 0 0 0 3px var(--focus-indicator);
 }
 
 .citation-tooltip {
@@ -422,11 +479,11 @@ tr:hover {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--card-background);
-    color: var(--text-color);
+    background-color: var(--surface-elevated);
+    color: var(--content);
     padding: 12px 16px;
     border-radius: 6px;
-    box-shadow: 0 3px 10px var(--shadow-color);
+    box-shadow: 0 3px 10px var(--overlay);
     font-size: 0.9rem;
     width: 200px;
     z-index: 100;
@@ -434,7 +491,7 @@ tr:hover {
     visibility: hidden;
     transition: opacity 0.2s, visibility 0.2s;
     pointer-events: none;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--separator);
     margin-bottom: 10px;
 }
 
@@ -446,7 +503,7 @@ tr:hover {
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
-    border-color: var(--card-background) transparent transparent transparent;
+    border-color: var(--surface-elevated) transparent transparent transparent;
 }
 
 .citation-link:hover .citation-tooltip {
@@ -460,7 +517,7 @@ tr:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--shadow-darkest);
+    background-color: var(--overlay-maximum);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,18 +533,18 @@ tr:hover {
 }
 
 .modal-content {
-    background-color: var(--card-background);
+    background-color: var(--surface-elevated);
     width: auto;
     max-width: 90%;
     max-height: 90vh;
     border-radius: 8px;
-    box-shadow: 0 5px 30px var(--shadow-color);
+    box-shadow: 0 5px 30px var(--overlay);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     transform: translateY(20px);
     transition: transform 0.3s ease;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--separator);
 }
 
 .modal-overlay.active .modal-content {
@@ -499,14 +556,14 @@ tr:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1.2rem 1.5rem;
-    border-bottom: 2px solid var(--border-color);
-    background-color: var(--secondary-color);
+    border-bottom: 2px solid var(--separator);
+    background-color: var(--brand-accent);
 }
 
 .modal-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--brand-main);
     margin: 0;
     display: flex;
     align-items: center;
@@ -514,12 +571,12 @@ tr:hover {
 
 [data-theme="dark"] .modal-header,
 [data-theme="dark"] footer {
-    color: var(--white);
+    color: var(--neutral-lightest);
 }
 
 [data-theme="dark"] .modal-title,
 [data-theme="dark"] .detail-section h3 {
-    color: var(--primary-color);
+    color: var(--brand-main);
 }
 
 .modal-close {
@@ -527,7 +584,7 @@ tr:hover {
     background: none;
     font-size: 1.8rem;
     cursor: pointer;
-    color: var(--text-color);
+    color: var(--content);
     transition: color 0.2s;
     padding: 5px;
     border-radius: 4px;
@@ -539,8 +596,8 @@ tr:hover {
 }
 
 .modal-close:hover {
-    color: var(--red);
-    background-color: var(--red-rgba-bg);
+    color: var(--alert);
+    background-color: var(--alert-bg-translucent);
 }
 
 .modal-body {
@@ -561,8 +618,8 @@ tr:hover {
 }
 
 .detail-section h3 {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--border-color);
+    color: var(--brand-main);
+    border-bottom: 2px solid var(--separator);
     margin-top: 0;
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
@@ -577,7 +634,7 @@ tr:hover {
     font-weight: 700;
     display: block;
     margin-bottom: 0.3rem;
-    color: var(--text-color);
+    color: var(--content);
 }
 
 .detail-value {
@@ -598,8 +655,8 @@ tr:hover {
     height: 60px;
     border-radius: 8px;
     margin-right: 1rem;
-    box-shadow: 0 2px 5px var(--shadow-color);
-    border: 2px solid var(--border-color);
+    box-shadow: 0 2px 5px var(--overlay);
+    border: 2px solid var(--separator);
     position: relative;
 }
 
@@ -613,8 +670,8 @@ tr:hover {
     height: 120px;
     background-color: inherit;
     border-radius: 8px;
-    border: 2px solid var(--border-color);
-    box-shadow: 0 5px 15px var(--shadow-color);
+    border: 2px solid var(--separator);
+    box-shadow: 0 5px 15px var(--overlay);
     z-index: 100;
     margin-left: 10px;
 }
@@ -622,13 +679,13 @@ tr:hover {
 .modal-footnotes {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--separator);
 }
 
 .modal-footnotes h3 {
     font-size: 1.2rem;
     margin-top: 0;
-    color: var(--primary-color);
+    color: var(--brand-main);
     font-weight: 700;
 }
 
@@ -643,7 +700,7 @@ tr:hover {
 }
 
 .footnote-link {
-    color: var(--primary-color);
+    color: var(--brand-main);
     text-decoration: underline;
     margin-right: 0.5rem;
     font-weight: 600;
@@ -651,20 +708,20 @@ tr:hover {
 
 footer {
     text-align: center;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--brand-accent);
+    color: var(--content);
     font-size: 0.95rem;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--separator);
 }
 
 footer a {
-    color: var(--primary-color);
+    color: var(--brand-main);
     text-decoration: underline;
     font-weight: 600;
 }
 
 [data-theme="dark"] footer a {
-    color: var(--white);
+    color: var(--neutral-lightest);
 }
 
 footer a:hover {
@@ -675,7 +732,7 @@ a:focus,
 button:focus,
 input:focus,
 select:focus {
-    outline: 3px solid var(--focus-outline-color);
+    outline: 3px solid var(--focus-ring);
     outline-offset: 2px;
 }
 
@@ -710,23 +767,28 @@ select:focus {
         top: 0.5rem;
         right: 0.5rem;
     }
+
+    .column-origin,
+    .column-toxicity {
+        display: none;
+    }
 }
 
 .error-message {
-    color: var(--red);
-    border: 1px solid var(--red-light-border);
+    color: var(--alert);
+    border: 1px solid var(--alert-border);
     border-radius: 4px;
-    background-color: var(--red-light-bg);
+    background-color: var(--alert-surface);
     padding: 1rem;
     text-align: center;
 }
 
 .sort-ascending {
-    background: var(--secondary-color);
+    background: var(--brand-accent);
 }
 
 .sort-descending {
-    background: var(--light-purple);
+    background: var(--highlight-light);
 }
 
 sub {
@@ -735,4 +797,9 @@ sub {
     position: relative;
     vertical-align: baseline;
     bottom: -0.25em;
+}
+
+.column-color_swatch {
+    width: 50px;
+    text-align: center;
 }
