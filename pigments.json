@@ -32,6 +32,88 @@
         "history": "Highly prized in Renaissance art for painting robes of the Virgin Mary; more expensive than gold in Middle Ages [oai_citation_attribution:1‡colors.muz.li](https://colors.muz.li/color/ultramarine-blue#:~:text=4166F5,color%20of%20deep%20ocean%20waters); synthetic ultramarine made it affordable."
     },
     {
+        "common_name": "Ultramarine Violet",
+        "alt_names": [
+            "Violet Ultramarine",
+            "Purple Ultramarine"
+        ],
+        "color_name": "Violet-purple",
+        "source": "Synthetic aluminosilicate mineral (similar to ultramarine blue but with different sulfur content)",
+        "chemical_name": "Sodium aluminum sulfosilicate",
+        "formula": "Na<sub>8-10</sub>Al<sub>6</sub>Si<sub>6</sub>O<sub>24</sub>S<sub>2-4</sub> (modified sulfur content)",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Similar to synthetic ultramarine blue but with adjusted processing parameters to produce the violet hue",
+        "origin": [
+            "Europe (19th century, developed after synthetic ultramarine blue)",
+            "Global (modern production)"
+        ],
+        "designations": [
+            "Pigment Violet 15 (PV15)",
+            "CI 77007 (same as ultramarine blue)"
+        ],
+        "color_description": "Reddish-violet shade with a distinctive purple tone; less intense than ultramarine blue but offers a unique color space in the purple spectrum",
+        "hex_code": "#7D4DDB",
+        "toxicity": "Non-toxic",
+        "history": "Developed as a variant of synthetic ultramarine blue in the 19th century; provides a valuable purple option for artists with good permanence, though it's becoming increasingly rare in modern paint lines"
+    },
+    {
+        "common_name": "Han Purple",
+        "alt_names": [
+            "Chinese Purple",
+            "Ancient Purple"
+        ],
+        "color_name": "Deep purple-blue",
+        "source": "Synthetic barium copper silicate",
+        "chemical_name": "Barium copper silicate",
+        "formula": "BaCuSi<sub>2</sub>O<sub>6</sub>",
+        "type": "Synthetic (historical)",
+        "in_use": false,
+        "not_used_reason": "Historical pigment, not commercially produced for modern paints",
+        "natural_sources": [],
+        "synthesis": "Ancient Chinese process involving barium minerals, copper minerals, and quartz heated to high temperatures (around 900-1000°C)",
+        "origin": [
+            "China (invented during Western Zhou period, 1045-771 BCE)",
+            "Used extensively during Qin Dynasty (221-206 BCE)"
+        ],
+        "designations": [],
+        "color_description": "Deep, vivid purple with blue undertones; similar to but distinguishable from Egyptian blue; distinctive for its bright, almost electric purple appearance when well preserved",
+        "hex_code": "#551A8B",
+        "toxicity": "Contains barium (toxic if ingested)",
+        "history": "One of the oldest known synthetic pigments; used in ancient China on prestigious objects including the Terracotta Army; demonstrates sophisticated chemical knowledge of ancient Chinese craftspeople; notable for its remarkable preservation in some archaeological discoveries"
+    },
+    {
+        "common_name": "Cobalt Violet",
+        "alt_names": [
+            "Cobalt Phosphate",
+            "Violet de Cobalt"
+        ],
+        "color_name": "Reddish-violet",
+        "source": "Synthetic cobalt phosphate",
+        "chemical_name": "Cobalt(II) phosphate",
+        "formula": "Co<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>",
+        "type": "Synthetic",
+        "in_use": "Limited",
+        "not_used_reason": "Expensive and increasingly rare due to manufacturing challenges",
+        "natural_sources": [],
+        "synthesis": "Precipitation of cobalt salts with phosphates under controlled conditions; first made commercially in 19th century",
+        "origin": [
+            "France (developed in mid-19th century)",
+            "Europe (refined manufacturing processes)",
+            "Limited global production today"
+        ],
+        "designations": [
+            "Pigment Violet 14 (PV14)",
+            "CI 77360"
+        ],
+        "color_description": "Delicate red-violet hue with a distinctive purple tone; moderate tinting strength but provides unique color that's difficult to mix; retains color intensity in mixtures better than many purple pigments",
+        "hex_code": "#8A4F76",
+        "toxicity": "Moderate (contains cobalt)",
+        "history": "Introduced in the mid-19th century as one of the first stable purple pigments; used by Impressionist painters for its unique hue; becoming increasingly rare in paint lines due to high production costs and environmental regulations on cobalt compounds"
+    },
+    {
         "common_name": "Vermilion (Cinnabar)",
         "alt_names": [
             "Cinnabar (natural mineral)",
@@ -448,7 +530,7 @@
         "common_name": "Emerald Green (Paris Green)",
         "alt_names": [
             "Paris Green",
-            "Scheele’s Green (related simpler arsenite)"
+            "Scheele's Green (related simpler arsenite)"
         ],
         "color_name": "Vivid green",
         "source": "Copper acetoarsenite (synthetic compound)",
@@ -559,7 +641,7 @@
         "color_description": "Intense dark blue with a slight greenish undertone in masstone; transparent in washes; excellent lightfastness but can degrade in alkali.",
         "hex_code": "#003153",
         "toxicity": "Low (insoluble, though contains cyanide in complex form; used as antidote for heavy metal poisoning)",
-        "history": "First modern synthetic pigment; revolutionized art palettes in the 18th century; used in everything from Hokusai’s prints (as \"Berlin Blue\") to blueprint paper."
+        "history": "First modern synthetic pigment; revolutionized art palettes in the 18th century; used in everything from Hokusai's prints (as \"Berlin Blue\") to blueprint paper."
     },
     {
         "common_name": "Cobalt Blue",
@@ -731,7 +813,7 @@
         "color_description": "Deep red with blue undertone, identical in hue to madder lake but slightly improved stability; transparent and excellent for glazing.",
         "hex_code": "#E32636",
         "toxicity": "Non-toxic",
-        "history": "First natural dye to be synthesized; caused collapse of madder farming in 1870s; a staple 'alizarin crimson' in artists’ palettes, though modern painters often prefer more permanent quinacridone crimson."
+        "history": "First natural dye to be synthesized; caused collapse of madder farming in 1870s; a staple 'alizarin crimson' in artists' palettes, though modern painters often prefer more permanent quinacridone crimson."
     },
     {
         "common_name": "Lac Dye (Lac Lake)",
@@ -1227,7 +1309,7 @@
         "color_description": "Deep navy blue dye that can appear almost black in mass; produces iconic denim blue on cotton; as a pigment (indigo lake) is moderately lightfast but can fade.",
         "hex_code": "#00416A",
         "toxicity": "Low (some skin sensitivity possible)",
-        "history": "Treasure of the ancient world (known as “blue gold”), indigo was a major trade dye for textiles; synthetic indigo revolutionized the dye industry and is most famous for coloring blue jeans."
+        "history": "Treasure of the ancient world (known as \"blue gold\"), indigo was a major trade dye for textiles; synthetic indigo revolutionized the dye industry and is most famous for coloring blue jeans."
     },
     {
         "common_name": "Phthalocyanine Blue",
@@ -1312,7 +1394,7 @@
         "color_description": "Vivid transparent magenta-red with excellent lightfastness and clarity; can range from pinkish rose to deep maroon depending on particle form.",
         "hex_code": "#D81B60",
         "toxicity": "Non-toxic",
-        "history": "Revolutionized artists’ reds in the mid-20th century as a lightfast replacement for alizarin; also widely used in automotive paints and printing inks."
+        "history": "Revolutionized artists' reds in the mid-20th century as a lightfast replacement for alizarin; also widely used in automotive paints and printing inks."
     },
     {
         "common_name": "Dioxazine Violet",
@@ -1645,7 +1727,7 @@
         "color_description": "Highly pure spectral color emission, tunable by particle size (e.g., ~630 nm red for larger CdSe QDs, ~540 nm green for smaller QDs); seen as bright saturated color points in displays.",
         "hex_code": "#FF003D",
         "toxicity": "Toxic if ingested/breathed (contains cadmium), but encapsulated in products.",
-        "history": "Represents the new class of 'physical' colorants used in cutting-edge displays; provides wide color gamut in QLED televisions and other nano-enabled display technologies."
+        "history": "Represents the new class of 'physical' pigments used in cutting-edge displays; provides wide color gamut in QLED televisions and other nano-enabled display technologies."
     },
     {
         "common_name": "Vantablack",
@@ -1671,5 +1753,550 @@
         "hex_code": "#010101",
         "toxicity": "Unknown as coating (not generally available); nanotubes can be hazardous if inhaled in free form.",
         "history": "The blackest material known; used in astronomy (to reduce stray light in telescopes) and famously in art controversies (Anish Kapoor's exclusive rights). Symbolizes extreme of pigment performance."
+    },
+    {
+        "common_name": "Tiffany Blue",
+        "alt_names": [
+            "Robin Egg Blue",
+            "Tiffany & Co. Blue"
+        ],
+        "color_name": "Light medium robin egg blue",
+        "source": "Synthetic colorant (trademarked commercial color)",
+        "chemical_name": "Varies (proprietary formula)",
+        "formula": "Proprietary (PMS 1837)",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Custom formulation by Pantone (PMS 1837), details proprietary",
+        "origin": [
+            "United States (1845, first used on Tiffany's Blue Book cover)",
+            "Registered as a color trademark in 1998"
+        ],
+        "designations": [
+            "PMS 1837 (Pantone proprietary color)",
+            "Hex code #81D8D0"
+        ],
+        "color_description": "Very light bluish green (ISCC–NBS descriptor); distinctive robin's egg blue shade associated with luxury jewelry brand Tiffany & Co.",
+        "hex_code": "#81D8D0",
+        "toxicity": "Not applicable (trademarked color, not a chemical pigment)",
+        "history": "First used in 1845 on the cover of Tiffany's Blue Book; became the signature color of the brand's packaging; registered as a color trademark in 1998; the PMS number 1837 references the year of Tiffany's foundation"
+    },
+    {
+        "common_name": "Quinacridone Rose",
+        "alt_names": [
+            "Rose Quinacridone",
+            "Rose Pink"
+        ],
+        "color_name": "Rose",
+        "source": "Synthetic organic pigment (quinacridone family)",
+        "chemical_name": "Quinacridone (2,9-dimethylquinacridone)",
+        "formula": "C<sub>20</sub>H<sub>12</sub>N<sub>2</sub>O<sub>2</sub>",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [
+            "Derived from coal tar intermediates (discovered in 1958 by DuPont)"
+        ],
+        "synthesis": "",
+        "origin": [
+            "USA (first commercial use late 1950s)"
+        ],
+        "designations": [
+            "PV19 (Pigment Violet 19)"
+        ],
+        "color_description": "Vivid transparent magenta-red with excellent lightfastness and clarity; can range from pinkish rose to deep maroon depending on particle form.",
+        "hex_code": "#D81B60",
+        "toxicity": "Non-toxic",
+        "history": "Revolutionized artists' reds in the mid-20th century as a lightfast replacement for alizarin; also widely used in automotive paints and printing inks."
+    },
+    {
+        "common_name": "Pinkest Pink",
+        "alt_names": [
+            "Stuart Semple's Pink",
+            "PINK"
+        ],
+        "color_name": "Fluorescent pink",
+        "source": "Synthetic fluorescent pigment (proprietary)",
+        "chemical_name": "Proprietary formula (likely fluorescent dyes on synthetic substrate)",
+        "formula": "Proprietary (not disclosed)",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Proprietary formulation by Stuart Semple; likely uses fluorescent dyes on synthetic carrier",
+        "origin": [
+            "United Kingdom (2016, created by artist Stuart Semple)"
+        ],
+        "designations": [
+            "Commercial artist pigment"
+        ],
+        "color_description": "Intensely bright fluorescent pink; described as the 'pinkest' commercially available pink pigment powder",
+        "hex_code": "#FF0090",
+        "toxicity": "Low toxicity; safe for art use but not cosmetic applications",
+        "history": "Created in 2016 by artist Stuart Semple in response to Anish Kapoor's exclusive rights to Vantablack. Became famous through the art world controversy when Semple banned Kapoor from purchasing it, making it available to everyone except Kapoor as a statement about art material accessibility."
+    },
+    {
+        "common_name": "Egyptian Blue",
+        "alt_names": [
+            "Calcium Copper Silicate",
+            "Cuprorivaite"
+        ],
+        "color_name": "Deep blue",
+        "source": "Synthetic calcium copper silicate",
+        "chemical_name": "Calcium copper silicate",
+        "formula": "CaCuSi4O10",
+        "type": "Synthetic (historical)",
+        "in_use": "Limited",
+        "not_used_reason": "Historical pigment, now mainly used in conservation and historical art reproduction",
+        "natural_sources": [],
+        "synthesis": "Ancient Egyptian process involving copper compounds, calcium carbonate (lime), silica (quartz sand), and natron (sodium carbonate) heated to 800-900°C",
+        "origin": [
+            "Ancient Egypt (c. 2500 BCE)",
+            "Used throughout the ancient Mediterranean world"
+        ],
+        "designations": [
+            "Pigment Blue 31 (PB31)"
+        ],
+        "color_description": "Deep sky-blue to azure blue; notable for its luminescent properties (absorbs visible light and emits infrared radiation)",
+        "hex_code": "#1B4B99",
+        "toxicity": "Low toxicity",
+        "history": "The first known synthetic pigment; used extensively in ancient Egyptian art, Roman frescoes, and throughout the Near East; its production technique was lost during the Middle Ages and only rediscovered in the 20th century through archaeological research"
+    },
+    {
+        "common_name": "Han Blue",
+        "alt_names": [
+            "Chinese Blue",
+            "Barium Copper Silicate"
+        ],
+        "color_name": "Light blue",
+        "source": "Synthetic barium copper silicate",
+        "chemical_name": "Barium copper silicate",
+        "formula": "BaCuSi₄O₁₀",
+        "type": "Synthetic (historical)",
+        "in_use": false,
+        "not_used_reason": "Historical pigment, not commercially produced for modern paints",
+        "natural_sources": [],
+        "synthesis": "Ancient Chinese process similar to Han Purple production, involving barium minerals, copper minerals, and quartz heated to high temperatures",
+        "origin": [
+            "China (originated during Han Dynasty, 206 BCE-220 CE)",
+            "Developed alongside Han Purple"
+        ],
+        "designations": [],
+        "color_description": "Vibrant light blue with a slight turquoise quality; differs from Han Purple in being a true blue rather than purple; structurally related to Egyptian Blue but with barium instead of calcium",
+        "hex_code": "#2C6FBB",
+        "toxicity": "Contains barium (toxic if ingested)",
+        "history": "Ancient Chinese pigment discovered alongside Han Purple; used in tomb decorations, ceramics, and other artifacts; demonstrates the sophisticated chemical knowledge of ancient Chinese artisans; its formulation is similar to Egyptian Blue but was developed independently"
+    },
+    {
+        "common_name": "Dioxazine Violet",
+        "alt_names": [
+            "Carbazole Violet",
+            "Permanent Violet"
+        ],
+        "color_name": "Deep purple-violet",
+        "source": "Synthetic organic pigment (carbazole dioxazine)",
+        "chemical_name": "Carbazole dioxazine (diarylcarbonium derivative)",
+        "formula": "C<sub>34</sub>H<sub>22</sub>Cl<sub>2</sub>N<sub>4</sub>O<sub>2</sub>",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [
+            "Derived from carbazole coal-tar chemical, first commercialized in 1950s"
+        ],
+        "synthesis": "",
+        "origin": [
+            "Germany (Bayer, 1952) patent"
+        ],
+        "designations": [
+            "PV23 (Pigment Violet 23)"
+        ],
+        "color_description": "Intensely dark blue-violet pigment with high tinting strength; in masstone appears nearly blackish purple, in tints gives bright violet.",
+        "hex_code": "#6F00FF",
+        "toxicity": "Non-toxic",
+        "history": "Provided artists and industries a very strong, lightfast purple; replaced less stable mixtures; used in paints, plastics, printer toners, etc."
+    },
+    {
+        "common_name": "Aureolin",
+        "alt_names": [
+            "Cobalt Yellow",
+            "Potassium Cobaltinitrite"
+        ],
+        "color_name": "Golden yellow",
+        "source": "Synthetic cobalt potassium nitrite",
+        "chemical_name": "Potassium cobaltinitrite",
+        "formula": "K3[Co(NO2)6]",
+        "type": "Synthetic",
+        "in_use": "Limited",
+        "not_used_reason": "Expensive and largely replaced by more lightfast alternatives",
+        "natural_sources": [],
+        "synthesis": "Precipitation of cobalt salt with potassium nitrite",
+        "origin": [
+            "Germany (discovered by N.W. Fischer in 1831)",
+            "Used in artists' palettes in 19th-early 20th century"
+        ],
+        "designations": [
+            "PY40 (Pigment Yellow 40)"
+        ],
+        "color_description": "Transparent golden yellow with high tinting strength; somewhat unstable in watercolor (darkens over time)",
+        "hex_code": "#FFD700",
+        "toxicity": "Moderately toxic (contains cobalt)",
+        "history": "Introduced in the 19th century and used by Impressionist painters; gradually fell out of favor due to its cost and issues with long-term stability"
+    },
+    {
+        "common_name": "Chrome Yellow",
+        "alt_names": [
+            "Lead Chromate",
+            "Paris Yellow"
+        ],
+        "color_name": "Bright yellow",
+        "source": "Lead chromate mineral (crocoite) or synthetic equivalent",
+        "chemical_name": "Lead(II) chromate",
+        "formula": "PbCrO4",
+        "type": "Both (natural mineral exists but pigment typically synthetic)",
+        "in_use": false,
+        "not_used_reason": "Toxicity (contains lead and hexavalent chromium)",
+        "natural_sources": [],
+        "synthesis": "Precipitation of lead salt with potassium chromate solution",
+        "origin": [
+            "France (developed by Louis Nicolas Vauquelin, early 1800s)",
+            "Widely used in 19th century art and industrial applications"
+        ],
+        "designations": [
+            "PY34 (Pigment Yellow 34)"
+        ],
+        "color_description": "Brilliant opaque lemon to orange-yellow; excellent hiding power but prone to darkening over time",
+        "hex_code": "#FFA700",
+        "toxicity": "Highly toxic (contains both lead and hexavalent chromium)",
+        "history": "Popular in 19th century painting (famously used by Vincent van Gogh); gradually replaced by cadmium yellows and modern alternatives due to toxicity concerns"
+    },
+    {
+        "common_name": "Chrome Green",
+        "alt_names": [
+            "Cinnabar Green",
+            "Chrome Oxide Green (sometimes confused with)"
+        ],
+        "color_name": "Yellowish green",
+        "source": "Mixture of chrome yellow and Prussian blue",
+        "chemical_name": "Lead chromate + Iron ferrocyanide mixture",
+        "formula": "PbCrO4 + Fe4[Fe(CN)6]3",
+        "type": "Synthetic",
+        "in_use": false,
+        "not_used_reason": "Toxicity (contains lead and hexavalent chromium)",
+        "natural_sources": [],
+        "synthesis": "Co-precipitation or physical mixture of chrome yellow and Prussian blue",
+        "origin": [
+            "Mid-19th century (industrial revolution era)",
+            "Used widely in commercial paints through early 20th century"
+        ],
+        "designations": [
+            "PG15 (Pigment Green 15)"
+        ],
+        "color_description": "Bright yellowish green; varies in shade from yellowish to bluish depending on the ratio of components",
+        "hex_code": "#138808",
+        "toxicity": "Highly toxic (contains lead and hexavalent chromium)",
+        "history": "Common in 19th century house paints and commercial applications; not to be confused with chromium oxide green (a different, safer pigment); largely obsolete today due to toxicity and availability of safer alternatives"
+    },
+    {
+        "common_name": "Azurite",
+        "alt_names": [
+            "Blue Malachite",
+            "Azure Copper",
+            "Mountain Blue"
+        ],
+        "color_name": "Azure blue",
+        "source": "Azurite mineral (basic copper carbonate)",
+        "chemical_name": "Basic copper(II) carbonate",
+        "formula": "Cu3(CO3)2(OH)2",
+        "type": "Natural",
+        "in_use": "Limited",
+        "not_used_reason": "Rare and expensive; less stable than modern synthetic blues",
+        "natural_sources": [
+            "Azurite mineral (often found with malachite in copper deposits)"
+        ],
+        "synthesis": "",
+        "origin": [
+            "Used in ancient Egypt and throughout Asia",
+            "Primary blue pigment in European Renaissance painting"
+        ],
+        "designations": [
+            "PB30 (Pigment Blue 30)"
+        ],
+        "color_description": "Deep azure blue that can range from light sky blue to deep navy depending on particle size; tends to convert to green malachite over time",
+        "hex_code": "#1034A6",
+        "toxicity": "Moderate (copper compound)",
+        "history": "One of the most important blue pigments in European painting before ultramarine; widely used in medieval and Renaissance art but gradually replaced by more stable synthetic blues"
+    },
+    {
+        "common_name": "Lead-tin Yellow",
+        "alt_names": [
+            "Giallo di Piombo Stagno",
+            "Giallorino"
+        ],
+        "color_name": "Bright yellow",
+        "source": "Lead stannate (synthetic)",
+        "chemical_name": "Lead tin oxide (lead stannate)",
+        "formula": "Pb2SnO4 (type I) or PbSn1-xSixO3 (type II)",
+        "type": "Synthetic",
+        "in_use": false,
+        "not_used_reason": "Historical pigment; no longer produced due to lead toxicity",
+        "natural_sources": [],
+        "synthesis": "Heating lead and tin oxides together",
+        "origin": [
+            "Europe (used from 13th to 18th centuries, especially in Italian Renaissance painting)"
+        ],
+        "designations": [
+            "PY41/PY43 (historical)"
+        ],
+        "color_description": "Bright, opaque, warm yellow with excellent covering power; chemically stable but contains toxic lead",
+        "hex_code": "#FFD700",
+        "toxicity": "Highly toxic (contains lead)",
+        "history": "Important yellow pigment in European paintings from 1300-1750; mysteriously fell out of use and was 'rediscovered' by art conservators in the 20th century; appears in works by Vermeer, Raphael and other Old Masters"
+    },
+    {
+        "common_name": "Zinc Yellow",
+        "alt_names": [
+            "Zinc Chromate",
+            "Buttercup Yellow"
+        ],
+        "color_name": "Lemon yellow",
+        "source": "Zinc chromate (synthetic)",
+        "chemical_name": "Zinc potassium chromate",
+        "formula": "K2O·4ZnCrO4·3H2O",
+        "type": "Synthetic",
+        "in_use": false,
+        "not_used_reason": "Toxicity (contains hexavalent chromium) and poor lightfastness",
+        "natural_sources": [],
+        "synthesis": "Precipitation of zinc compounds with chromate solution",
+        "origin": [
+            "Germany (19th century)",
+            "Used until mid-20th century"
+        ],
+        "designations": [
+            "PY36 (Pigment Yellow 36)"
+        ],
+        "color_description": "Pale, cool lemon yellow with moderate opacity; less brilliant than chrome yellow but safer (though still toxic)",
+        "hex_code": "#FFF700",
+        "toxicity": "Toxic (contains hexavalent chromium)",
+        "history": "Used in 19th-early 20th century painting; also used as industrial corrosion inhibitor for metals; fell out of favor due to fugitive nature and toxicity"
+    },
+    {
+        "common_name": "Manganese Violet",
+        "alt_names": [
+            "Permanent Violet",
+            "Mineral Violet"
+        ],
+        "color_name": "Reddish violet",
+        "source": "Synthetic manganese ammonium pyrophosphate",
+        "chemical_name": "Ammonium manganese(III) pyrophosphate",
+        "formula": "NH4MnP2O7",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Complex reaction of manganese compounds with ammonium and phosphate",
+        "origin": [
+            "Germany (invented in 1868)",
+            "First stable inorganic violet pigment"
+        ],
+        "designations": [
+            "PV16 (Pigment Violet 16)"
+        ],
+        "color_description": "Reddish-violet with moderate tinting strength; cooler and less intense than cobalt violet but more affordable",
+        "hex_code": "#9F00FF",
+        "toxicity": "Low (compared to other metal pigments)",
+        "history": "Introduced in the late 19th century as a more permanent alternative to fugitive organic purples; used by Post-Impressionist painters; remains in use in artist paints"
+    },
+    {
+        "common_name": "Titanium Yellow",
+        "alt_names": [
+            "Nickel Titanate Yellow",
+            "Titanate Yellow"
+        ],
+        "color_name": "Cool light yellow",
+        "source": "Nickel antimony titanium oxide (synthetic)",
+        "chemical_name": "Nickel antimony titanium yellow rutile",
+        "formula": "(Ti,Ni,Sb)O2",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "High-temperature solid state reaction of metal oxides",
+        "origin": [
+            "Developed in mid-20th century (1950s-60s)"
+        ],
+        "designations": [
+            "PY53 (Pigment Yellow 53)"
+        ],
+        "color_description": "Light, cool yellow with greenish undertones; extremely stable to light and heat; good opacity",
+        "hex_code": "#EFD334",
+        "toxicity": "Low (inert ceramic material)",
+        "history": "Developed as a non-toxic alternative to chrome and cadmium yellows; primarily used in industrial applications requiring heat stability (ceramics, plastics) but also available in some artist paints"
+    },
+    {
+        "common_name": "Lithopone",
+        "alt_names": [
+            "Zinc Sulfide-Barium Sulfate"
+        ],
+        "color_name": "White",
+        "source": "Co-precipitated zinc sulfide and barium sulfate",
+        "chemical_name": "Mixture of zinc sulfide and barium sulfate",
+        "formula": "ZnS + BaSO4",
+        "type": "Synthetic",
+        "in_use": "Limited",
+        "not_used_reason": "Largely replaced by titanium white for most applications",
+        "natural_sources": [],
+        "synthesis": "Co-precipitation of zinc sulfide with barium sulfate (chemical reaction of zinc sulfate and barium sulfide)",
+        "origin": [
+            "France (patented by J.G. Constant de Douhet in 1874)",
+            "Mass production began 1876 in Germany"
+        ],
+        "designations": [
+            "PW5 (Pigment White 5)"
+        ],
+        "color_description": "Warm white with less opacity than titanium white but softer optical properties; can darken slightly in intense light",
+        "hex_code": "#F8F7E8",
+        "toxicity": "Low (though historical formulations might contain trace heavy metals)",
+        "history": "Important industrial white pigment of the late 19th and early 20th centuries; cheaper alternative to lead white before titanium white became widespread; used in house paints, artist paints, and as a paper brightener"
+    },
+    {
+        "common_name": "Perylene Red",
+        "alt_names": [
+            "Perylene Red, PR179"
+        ],
+        "color_name": "Maroon red",
+        "source": "Synthetic organic pigment (perylene tetracarboxylic derivative)",
+        "chemical_name": "Perylene-3,4,9,10-tetracarboxylic acid diimide",
+        "formula": "C<sub>26</sub>H<sub>18</sub>N<sub>2</sub>O<sub>4</sub>",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [
+            "Derived from anthracene (coal tar) chemistry, developed mid-20th c."
+        ],
+        "synthesis": "",
+        "origin": [
+            "Germany (BASF, 1957 introduction of perylene pigments)"
+        ],
+        "designations": [
+            "PR179 (Pigment Red 179)"
+        ],
+        "color_description": "Deep maroon red with subtle brown undertone; very lightfast and opaque; excellent alternative to some cadmium or alizarin deep reds.",
+        "hex_code": "#5F2120",
+        "toxicity": "Non-toxic",
+        "history": "One of the modern synthetic organic pigments expanding the range of stable deep reds for artists and automotive paints in the late 20th century."
+    },
+    {
+        "common_name": "Indanthrone Blue",
+        "alt_names": [
+            "Indanthrene Blue",
+            "Anthraquinone Blue"
+        ],
+        "color_name": "Deep blue",
+        "source": "Synthetic organic pigment (anthraquinone derivative)",
+        "chemical_name": "Indanthrone (dibenzanthrone)",
+        "formula": "C<sub>28</sub>H<sub>14</sub>N<sub>2</sub>O<sub>4</sub>",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Complex synthesis from anthraquinone derivatives (first made in 1901)",
+        "origin": [
+            "Germany (BASF, developed by René Bohn in 1901)",
+            "First truly lightfast blue vat dye"
+        ],
+        "designations": [
+            "PB60 (Pigment Blue 60)",
+            "CI 69800"
+        ],
+        "color_description": "Deep navy blue with moderate transparency; extremely lightfast and resistant to chemicals; less intense but more permanent than phthalo blue",
+        "hex_code": "#002FA7",
+        "toxicity": "Low",
+        "history": "Originally developed as a textile dye, Indanthrone became an important artist pigment in the mid-20th century when made into a lake; provides a more subdued alternative to phthalocyanine blue in artist palettes"
+    },
+    {
+        "common_name": "Brilliant Blue FCF",
+        "alt_names": [
+            "FD&C Blue No.1",
+            "E133"
+        ],
+        "color_name": "Bright blue",
+        "source": "Synthetic triphenylmethane dye",
+        "chemical_name": "Disodium 2-[[4-[ethyl-[(3-sulfonatophenyl)methyl]amino]phenyl]-[4-[ethyl-[(3-sulfonatophenyl)methyl]azaniumylidene]cyclohexa-2,5-dien-1-ylidene]methyl]benzenesulfonate",
+        "formula": "C<sub>37</sub>H<sub>34</sub>N<sub>2</sub>Na<sub>2</sub>O<sub>9</sub>S<sub>3</sub>",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Chemical synthesis from coal tar derivatives",
+        "origin": [
+            "Developed in the early 20th century",
+            "Approved as food colorant in the US in 1929"
+        ],
+        "designations": [
+            "E133 (EU food additive)",
+            "FD&C Blue No. 1 (US)",
+            "CI 42090"
+        ],
+        "color_description": "Vivid bright blue; highly water-soluble; produces electric blue in food and beverage applications",
+        "hex_code": "#1F75FE",
+        "toxicity": "Generally recognized as safe for food use; poorly absorbed by the body",
+        "history": "One of the most widely used synthetic blue colorants in food, beverages, and cosmetics; ubiquitous in candy, sports drinks, and packaged foods; also used in scientific research as a marker dye"
+    },
+    {
+        "common_name": "Tartrazine",
+        "alt_names": [
+            "FD&C Yellow No.5",
+            "E102"
+        ],
+        "color_name": "Lemon yellow",
+        "source": "Synthetic azo dye",
+        "chemical_name": "Trisodium 1-(4-sulfonatophenyl)-4-(4-sulfonatophenylazo)-5-pyrazolone-3-carboxylate",
+        "formula": "C<sub>16</sub>H<sub>9</sub>N<sub>4</sub>Na<sub>3</sub>O<sub>9</sub>S<sub>2</sub>",
+        "type": "Synthetic",
+        "in_use": true,
+        "not_used_reason": "",
+        "natural_sources": [],
+        "synthesis": "Chemical synthesis from petroleum derivatives",
+        "origin": [
+            "Germany (first synthesized in 1884)",
+            "Widely adopted as food colorant in early 20th century"
+        ],
+        "designations": [
+            "E102 (EU food additive)",
+            "FD&C Yellow No. 5 (US)",
+            "CI 19140"
+        ],
+        "color_description": "Bright lemon yellow; highly water-soluble; used for yellow-green coloration in foods",
+        "hex_code": "#F7E103",
+        "toxicity": "Generally recognized as safe but known to cause allergic reactions in some individuals, particularly those with aspirin sensitivity",
+        "history": "One of the most common synthetic yellow colorants; widely used in processed foods, beverages, medications, and cosmetics; subject to controversy and labeling requirements in some countries due to potential links to hyperactivity in children"
+    },
+    {
+        "common_name": "Cobalt Green",
+        "alt_names": [
+            "Rinman's Green",
+            "Zinc Green"
+        ],
+        "color_name": "Bluish green",
+        "source": "Cobalt zinc oxide (cobalt zincate)",
+        "chemical_name": "Cobalt(II) zincate",
+        "formula": "CoO·nZnO",
+        "type": "Synthetic",
+        "in_use": "Limited",
+        "not_used_reason": "Expensive; largely replaced by chromium oxide and phthalocyanine greens",
+        "natural_sources": [],
+        "synthesis": "High-temperature calcination of cobalt and zinc compounds",
+        "origin": [
+            "Sweden (discovered by Sven Rinman in 1780)",
+            "Used in 19th-early 20th century art"
+        ],
+        "designations": [
+            "PG19 (Pigment Green a19)"
+        ],
+        "color_description": "Soft, muted bluish-green with moderate tinting strength; more transparent than viridian",
+        "hex_code": "#3CB371",
+        "toxicity": "Moderately toxic (contains cobalt)",
+        "history": "Historically significant as one of the first stable inorganic green pigments but never achieved widespread use due to high cost and relatively weak color; appears in some Impressionist works before being supplanted by cheaper alternatives"
     }
 ]
