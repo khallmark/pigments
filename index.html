@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorants Dataset</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      🌓
+    </button>
+    
+    <div class="container">
+      <h1>Colorants Dataset</h1>
+      
+      <div class="summary-container">
+        <div class="summary-box">
+          <div class="summary-content">
+            <h2>Colorants Explorer</h2>
+            <p>Discover the fascinating world of pigments and dyes that have colored human history for millennia.</p>
+            <div class="summary-stats" id="summaryStats">
+              <!-- Stats will be injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="search-container">
+        <div class="search-wrapper">
+          <input type="text" id="searchInput" placeholder="Search all fields..." onkeyup="filterTable()" />
+          <button id="resetFilters" class="reset-btn">Reset Filters</button>
+        </div>
+        <div class="filters-wrapper" id="filtersContainer">
+          <!-- Filters will be generated here -->
+        </div>
+      </div>
+      
+      <div class="table-container">
+        <table id="colorantsTable">
+          <thead>
+            <tr id="tableHeaderRow">
+              <!-- Simplified headers will be injected here -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data rows injected here -->
+          </tbody>
+        </table>
+      </div>
+      
+      <footer>
+        <p>Copyright 2025 - Kevin Hallmark | <a href="https://github.com/khallmark" target="_blank">GitHub</a></p>
+      </footer>
+    </div>
+    
+    <!-- Modal for detailed view -->
+    <div id="colorantModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">
+            <span id="modalColorSwatch" class="modal-color-preview"></span>
+            <span id="modalTitle">Colorant Details</span>
+          </h2>
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="detail-grid" id="modalDetails">
+            <!-- Detail sections will be inserted here -->
+          </div>
+          <div class="modal-footnotes">
+            <h3>References</h3>
+            <ul class="footnote-list" id="footnotesList">
+              <!-- Footnotes will be inserted here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
