@@ -1,0 +1,36 @@
+# Pigments
+
+Pigments is a minimal web-based tool for visualizing and exploring color palettes from a JSON file. It's lightweight, dependency-free, and designed for fast local development or static hosting.
+
+## Features
+- Visualize color palettes from `pigments.json`
+- Clean, responsive UI
+- Zero dependencies — pure HTML/CSS/JS
+
+## Getting Started
+
+### Prerequisites
+You'll need Python installed (any version ≥ 3).
+
+### Run Locally
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/khallmark/pigments.git
+   cd pigments
+   ```
+
+2. Start a local web server:
+   ```bash
+   python -m http.server 8000
+   ```
+
+3. Open your browser and navigate to:
+   ```
+   http://localhost:8000
+   ```
+
+You'll see the color palette rendered from `pigments.json`.
+
+## License
+
+MIT
