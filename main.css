@@ -300,13 +300,13 @@ table {
 
 th,
 td {
-    padding: 12px 15px;
+    padding: 12px 0px 12px 15px;
     text-align: left;
     border-bottom: 1px solid var(--separator);
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: none;
-    padding: 6px 10px;
+    padding: 6px 0px 6px 10px;
 }
 
 th {
@@ -317,7 +317,6 @@ th {
     cursor: pointer;
     font-weight: 700;
     justify-content: space-between;
-    min-width: 100px;
     position: sticky;
     top: 0;
     transition: background-color 0.2s;
@@ -376,7 +375,7 @@ tr:hover {
 .swatch {
     width: 24px;
     height: 24px;
-    margin-right: 8px;
+    margin-right: 0px;
     border-radius: 4px;
 }
 
@@ -800,6 +799,6 @@ sub {
 }
 
 .column-color_swatch {
-    width: 50px;
+    width: 24px;
     text-align: center;
 }
