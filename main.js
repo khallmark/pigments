@@ -1,8 +1,6 @@
 // List of essential header fields to show in the main table
 const essentialHeaders = [
   'common_name',
-  'color_name',
-  'hex_code',
   'type',
   'in_use',
   'origin',
@@ -208,6 +206,79 @@ const tableManager = {
     }
   },
   
+  createRow(item, rowIndex) {
+    const tr = utils.createElement('tr', { 'data-index': rowIndex });
+    tr.addEventListener('click', () => modalManager.open(rowIndex));
+    
+    essentialHeaders.forEach(header => {
+      const td = this.createDataCell(item, header);
+      tr.appendChild(td);
+    });
+    
+    return tr;
+  },
+  processCellValue(cellValue) {
+
+    if (cellValue === true) {
+      cellValue = 'Yes';
+    }
+
+    if (cellValue === false) {
+      cellValue = 'No';
+    }
+    
+    if (cellValue.indexOf('(') > -1) {
+      cellValue = cellValue.substring(0, cellValue.indexOf('(')).trim();
+    }
+
+    return cellValue;
+  },
+  
+  createDataCell(item, header) {
+    const td = utils.createElement('td');
+    const contentDiv = utils.createElement('div', { class: 'cell-content' });
+    let cellValue = item[header] ?? '';
+
+    if (typeof cellValue === 'string' && cellValue.indexOf(',') > -1) {
+      cellValue = cellValue.split(',').map(v => v.trim());
+    }
+
+    if (Array.isArray(cellValue)) {
+      cellValue = cellValue.map(v => this.processCellValue(v));
+      cellValue = cellValue.map(v => '<li>' + v + '</li>');
+      cellValue = cellValue.join('');
+      cellValue = '<ul>' + cellValue + '</ul>';
+    } else {
+      cellValue = this.processCellValue(cellValue);
+    }
+        
+    if (header === 'common_name') {
+      contentDiv.innerHTML = utils.processText(cellValue);
+
+      const colorCode = item['hex_code'] ?? undefined;
+
+      if (colorCode) {
+        const swatch = utils.createElement('span', { 
+          class: 'swatch', 
+          style: `background-color: ${colorCode}` 
+        });
+      
+        const swatchLarge = utils.createElement('span', {
+          class: 'swatch-large', 
+          style: `background-color: ${colorCode}` 
+        });
+        
+        contentDiv.prepend(swatch)
+      }
+      
+    } else {
+      contentDiv.innerHTML = utils.processText(cellValue);
+    }
+
+    td.appendChild(contentDiv);
+    return td;
+  },
+
   populateTable(data) {
     const tbody = document.querySelector('#pigmentsTable tbody');
     tbody.innerHTML = '';
@@ -221,40 +292,7 @@ const tableManager = {
     pigmentsData = data;
     
     data.forEach((item, rowIndex) => {
-      const tr = utils.createElement('tr', { 'data-index': rowIndex });
-      tr.addEventListener('click', () => modalManager.open(rowIndex));
-  
-      essentialHeaders.forEach(header => {
-        const td = utils.createElement('td');
-        const contentDiv = utils.createElement('div', { class: 'cell-content' });
-        let cellValue = item[header] || '';
-  
-        if (Array.isArray(cellValue)) {
-          cellValue = cellValue.join(', ');
-        }
-  
-        if (header === 'hex_code') {
-          const swatch = utils.createElement('span', { 
-            class: 'swatch', 
-            style: `background-color: ${cellValue}` 
-          });
-          
-          const swatchLarge = utils.createElement('span', { 
-            class: 'swatch-large', 
-            style: `background-color: ${cellValue}` 
-          });
-          
-          contentDiv.appendChild(swatch);
-          contentDiv.appendChild(swatchLarge);
-          contentDiv.appendChild(document.createTextNode(cellValue));
-        } else {
-          contentDiv.innerHTML = utils.processText(cellValue);
-        }
-  
-        td.appendChild(contentDiv);
-        tr.appendChild(td);
-      });
-  
+      const tr = this.createRow(item, rowIndex);
       tbody.appendChild(tr);
     });
   }
@@ -513,11 +551,7 @@ const modalManager = {
     if (!item) return;
     
     // Set the modal title
-    document.getElementById('modalTitle').textContent = item.common_name || 'Colorant Details';
-    
-    // Set the color swatch
-    const modalSwatch = document.getElementById('modalColorSwatch');
-    modalSwatch.style.backgroundColor = item.hex_code || '#FFFFFF';
+    document.getElementById('modalTitle').textContent = item.common_name || 'Pigment Details';
     
     // Populate the modal details
     const modalDetails = document.getElementById('modalDetails');
@@ -526,10 +560,10 @@ const modalManager = {
     // Group the fields into logical sections
     const sections = {
       'Basic Information': ['common_name', 'alt_names', 'color_name', 'color_description', 'hex_code'],
-      'Chemical Properties': ['chemical_name', 'formula', 'source'],
+      'Historical Context': ['history'],
       'Production & Origin': ['type', 'natural_sources', 'synthesis', 'origin'],
+      'Chemical Properties': ['chemical_name', 'formula', 'source'],
       'Usage & Safety': ['in_use', 'not_used_reason', 'toxicity', 'designations'],
-      'Historical Context': ['history']
     };
     
     // Create each section
@@ -606,7 +640,7 @@ const modalManager = {
     this.populateFootnotes();
     
     // Show the modal
-    document.getElementById('colorantModal').classList.add('active');
+    document.getElementById('pigmentModal').classList.add('active');
     
     // Prevent body scrolling
     document.body.style.overflow = 'hidden';
@@ -659,7 +693,7 @@ const modalManager = {
   },
   
   close() {
-    document.getElementById('colorantModal').classList.remove('active');
+    document.getElementById('pigmentModal').classList.remove('active');
     document.body.style.overflow = '';
   }
 };
@@ -674,7 +708,7 @@ function initApp() {
   document.getElementById('themeToggle').addEventListener('click', () => themeManager.toggle());
   document.getElementById('resetFilters').addEventListener('click', () => filterManager.resetFilters());
   document.getElementById('searchInput').addEventListener('input', () => filterManager.applyFilters());
-  document.getElementById('colorantModal').addEventListener('click', function(event) {
+  document.getElementById('pigmentModal').addEventListener('click', function(event) {
     if (event.target === this) {
       modalManager.close();
     }
@@ -682,7 +716,7 @@ function initApp() {
   
   // Close modal on escape key
   document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' && document.getElementById('colorantModal').classList.contains('active')) {
+    if (event.key === 'Escape' && document.getElementById('pigmentModal').classList.contains('active')) {
       modalManager.close();
     }
   });
