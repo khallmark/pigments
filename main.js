@@ -38,7 +38,7 @@ const themeOptions = [
 
 // Global variables
 let sortDir = {};
-let colorantsData = []; // Store the data globally for use in modal
+let pigmentsData = []; // Store the data globally for use in modal
 let footnotes = []; // Store extracted footnotes
 let currentTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 console.log(currentTheme);
@@ -164,7 +164,7 @@ const tableManager = {
   },
   
   sortTable(colIndex) {
-    const table = document.getElementById('colorantsTable');
+    const table = document.getElementById('pigmentsTable');
     const tbody = table.tBodies[0];
     const rows = Array.from(tbody.getElementsByTagName('tr'));
     
@@ -209,7 +209,7 @@ const tableManager = {
   },
   
   populateTable(data) {
-    const tbody = document.querySelector('#colorantsTable tbody');
+    const tbody = document.querySelector('#pigmentsTable tbody');
     tbody.innerHTML = '';
     
     if (!Array.isArray(data)) {
@@ -218,7 +218,7 @@ const tableManager = {
     }
     
     // Store data globally for modal use
-    colorantsData = data;
+    pigmentsData = data;
     
     data.forEach((item, rowIndex) => {
       const tr = utils.createElement('tr', { 'data-index': rowIndex });
@@ -264,7 +264,7 @@ const tableManager = {
 const dataManager = {
   loadJSON() {
     const tableContainer = document.querySelector('.table-container');
-    const loadingMsg = utils.createElement('div', { class: 'loading-message' }, 'Loading colorants data...');
+    const loadingMsg = utils.createElement('div', { class: 'loading-message' }, 'Loading pigments data...');
     tableContainer.appendChild(loadingMsg);
   
     fetch('pigments.json')
@@ -342,7 +342,7 @@ const dataManager = {
     
     // Create stat elements
     const stats = [
-      { label: 'Total Colorants', value: totalColors },
+      { label: 'Total Pigments', value: totalColors },
       { label: 'Natural Sources', value: typeCount['Natural'] || 0 },
       { label: 'Synthetic', value: typeCount['Synthetic'] || 0 },
       { label: 'Currently in Use', value: inUseCount.inUse },
@@ -452,7 +452,7 @@ const filterManager = {
         value: select.value
       }));
     
-    const table = document.getElementById('colorantsTable');
+    const table = document.getElementById('pigmentsTable');
     const rows = table.getElementsByTagName('tr');
     
     // Skip header row (i=0)
@@ -461,7 +461,7 @@ const filterManager = {
       
       // Get the row's data index
       const dataIndex = parseInt(row.dataset.index);
-      const item = colorantsData[dataIndex];
+      const item = pigmentsData[dataIndex];
       
       // First check if item exists
       if (!item) continue;
@@ -509,7 +509,7 @@ const modalManager = {
     // Reset footnotes array for each new modal
     footnotes = [];
     
-    const item = colorantsData[rowIndex];
+    const item = pigmentsData[rowIndex];
     if (!item) return;
     
     // Set the modal title
